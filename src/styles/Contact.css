@@ -5,7 +5,7 @@
 .contact-header {
   padding: 4rem 0;
   background: 
-    linear-gradient(135deg, rgba(31, 41, 55, 0.9) 0%, rgba(17, 24, 39, 0.9) 100%),
+    linear-gradient(135deg, rgba(59, 69, 122, 0.424) 0%, rgba(97, 95, 99, 0.8) 100%),
     url('../assets/programmer.jpg') center/cover;
   color: white;
   text-align: center;
@@ -29,9 +29,12 @@
 }
 
 .contact-header h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
 }
 
 .contact-lead {
@@ -54,9 +57,12 @@
 }
 
 .contact-info h2 {
-  color: #1f2937;
+  color: #f6f6f5;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .contact-info > p {

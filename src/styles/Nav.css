@@ -6,14 +6,14 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background: #000000;
+    background: #324764;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .navigation.scrolled {
-    background: rgba(34, 33, 33, 0.904);
+    background: rgba(39, 56, 75, 0.904);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -33,13 +33,13 @@
     gap: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ECDFCC;
+    color: #DDE6ED;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .navLogo:hover {
-    color: #eed6b2;
+    color: #ffffff;
 }
 
 .navMenu {
@@ -49,7 +49,7 @@
 }
 
 .navLink {
-    color: #ECDFCC;
+    color: #DDE6ED;
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -66,7 +66,7 @@
     left: 50%;
     width: 0;
     height: 2px;
-    background: #ECDFCC;
+    background: #DDE6ED;
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -77,12 +77,12 @@
 }
 
 .navLink:hover {
-    color: #eed6b2;
+    color: #ffffff;
     background: rgba(37, 99, 235, 0.05);
 }
 
 .navLink.active {
-    color: #ECDFCC;
+    color: #DDE6ED;
     background: rgba(186, 194, 211, 0.1);
 }
 
@@ -90,7 +90,7 @@
     display: none;
     background: none;
     border: none;
-    color: #374151;
+    color: #DDE6ED;
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 8px;
@@ -99,7 +99,7 @@
 
 .navToggle:hover {
     background: rgba(37, 99, 235, 0.1);
-    color: #ECDFCC;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -121,7 +121,7 @@
     top: 70px;
     left: 0;
     right: 0;
-    background: rgba(15, 15, 15, 0.726);
+    background: rgba(39, 56, 75, 0.802);
     backdrop-filter: blur(10px);
     flex-direction: column;
     padding: 2rem 0;
@@ -157,7 +157,7 @@
   .navLink:hover,
   .navLink.active {
     background: rgba(166, 170, 179, 0.1);
-    color: #eed6b2;
+    color: #ffffff;
   }
 }
 

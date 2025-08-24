@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   background: 
-    linear-gradient(135deg, rgba(59, 70, 122, 0.8) 0%, rgba(97, 95, 99, 0.8) 100%),
+    linear-gradient(135deg, rgba(59, 69, 122, 0.424) 0%, rgba(97, 95, 99, 0.8) 100%),
     url('../assets/programmer.jpg') center/cover;
   color: white;
   position: relative;
@@ -50,7 +50,7 @@
 }
 
 .highlight {
-  background: linear-gradient(45deg, #030303, #d8d8d2);
+  background: linear-gradient(45deg, #9DB2BF, #d8d8d2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -79,14 +79,14 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.004);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
 }
 
 .hero-buttons .btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.221);
   transform: translateY(-2px);
 }
 
@@ -112,9 +112,14 @@
 }
 
 .section-Title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  text-shadow:  1px 2px 1px rgba(0, 0, 0, 0.8);
   text-align: center;
   margin-bottom: 3rem;
-  color: #1f2937;
+  color: #e3e4e6;
 }
 
 .features-grid {
@@ -141,7 +146,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(37, 212, 235, 0.1), transparent);
+  background: linear-gradient(135deg, rgba(181, 182, 191, 0.424) 0%, rgba(97, 95, 99, 0.8) 100%);
   transition: left 0.5s ease;
 }
 
@@ -185,7 +190,7 @@
 
 .cta {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #0f0f0f 0%, #000000 100%);
+  background: linear-gradient(135deg, #526D82 0%, #27374D 100%);
   color: white;
 }
 
@@ -216,14 +221,14 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.072);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
 }
 
 .cta-buttons .btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.221);
   transform: translateY(-2px);
 }
 
@@ -241,13 +246,13 @@
 .social-link {
   width: 50px;
   height: 50px;
-  background: rgba(37, 205, 235, 0.1);
+  background: #526D82;
   border: 1px solid rgba(37, 195, 235, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0ce2d7c7;
+  color: #526D82;
   text-decoration: none;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);

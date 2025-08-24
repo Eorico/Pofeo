@@ -1,10 +1,10 @@
 .about {
-    padding-top: 2rem;
+    padding-top: 0rem;
 }
 
 .about-Self {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: #f8fafc;
 }
 
 .about-Content {
@@ -15,20 +15,21 @@
 }
 
 .about-Text h1 {
-    font-size: 3rem;
-    color: #1f2937;
-    margin-bottom: 1.5rem;
+    font-size: 3.7rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-shadow:  1px 2px 1px rgba(0, 0, 0, 0.8);
+    color: #e3e4e6;
 }
 
 .about-Lead {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #2563eb;
     margin-bottom: 1.5rem;
 }
 
 .about-Text p {
-    color: #6b7280;
+    color: #000000;
     margin-bottom: 1.5rem;
     line-height: 1.7;
 }
@@ -42,11 +43,11 @@
     height: 400px;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.517);
 }
 
 .stats {
-    padding: 6rem 0;
+    padding: 0.5rem 0;
     background: white;
 }
 
@@ -60,9 +61,9 @@
     text-align: center;
     padding: 2rem;
     border-radius: 12px;
-    background: linear-gradient(45deg, #000000, #505050);
+    background: linear-gradient(45deg, #27374D, #526D82);
     color: white;
-    box-shadow: 0 10px 30px rgba(15, 83, 95, 0.671);
+    box-shadow: 0 10px 30px rgba(16, 16, 16, 0.71);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -75,7 +76,7 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    background: linear-gradient(45deg, transparent, rgba(184, 181, 181, 0.133), transparent);
     transform: rotate(45deg);
     transition: all 0.5s ease;
 }
@@ -86,7 +87,7 @@
 
 .stats-Card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(189, 190, 194, 0.863);
+    box-shadow: 0 20px 40px rgba(236, 236, 238, 0.863);
 }
 
 @keyframes shimmer {
@@ -133,7 +134,7 @@
 }
 
 .skills-Text p {
-    color: #6b7280;
+    color: #000000;
     line-height: 1.7;
 }
 
@@ -147,7 +148,7 @@
     background: white;
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.369);
     transition: all 0.3s ease;
 }   
 
@@ -267,7 +268,7 @@
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.361);
     border: 1px solid #e5e7eb;
     transition: all 0.3s ease;
 }
@@ -289,7 +290,7 @@
 }
 
 .timeline-Content p:last-child {
-    color: #6b7280;
+    color: #000000;
     margin: 0;
     list-style: 1.6;
 }
