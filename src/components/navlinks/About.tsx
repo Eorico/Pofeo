@@ -110,9 +110,9 @@ const About: React.FC = () => {
                         <div className="timeline-Item fade-in-up">
                             <div className="timeline-Marker"></div>
                             <div className="timeline-Content">
-                                <h3>Senior Full-Stack Developer</h3>
+                                <h3>Full-Stack Developer</h3>
                                 <p className="timeline-Date">2024 - Present</p>
-                                <p>Specialized in React, Node.js, and cloud architecture</p>
+                                <p>Specialized in Mongo DB, Express.js, React.js, and Node.js</p>
                             </div>
                         </div>
                         <div className="timeline-Item fade-in-up">
