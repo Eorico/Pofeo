@@ -89,7 +89,7 @@ const About: React.FC = () => {
                             </p>
                         </div>
                         <div className="about-Image fade-in-up">
-                            <img src="src/assets/Eorico.png" alt="Me" />
+                            <img src="/assets/Eorico.png" alt="Me" />
                         </div>
                     </div>
                 </div>
