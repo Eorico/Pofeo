@@ -4,27 +4,27 @@ import '../../styles/About.css';
 const Certifications = [
     {
         title: "Python Essential 1",
-        image: "src/assets/PythonCert1.png"
+        image: "/assets/PythonCert1.png"
     },
     {
         title: "Python Essential 2",
-        image: "src/assets/PythonCert2.png"
+        image: "/assets/PythonCert2.png"
     },
     {
         title: "JavaScript Essential 1",
-        image: "src/assets/Js1Cert.png"
+        image: "/assets/Js1Cert.png"
     },
     {
         title: "JavaScript Essential 2",
-        image: "src/assets/Js2Cert.png"
+        image: "/assets/Js2Cert.png"
     },
     {
         title: "C++ Essential 1",
-        image: "src/assets/C++1.png"
+        image: "/assets/C++1.png"
     },
     {
         title: "Computer Science 1",
-        image: "src/assets/CS1.png"
+        image: "/assets/CS1.png"
     },
 ];
 
