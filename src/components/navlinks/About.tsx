@@ -1,6 +1,34 @@
-import React from "react";
-import { Award, Code, Palette, User } from "lucide-react";
+import React, { useState, useEffect, useRef } from "react";
 import '../../styles/About.css';
+
+const Certifications = [
+    {
+        title: "Python Essential 1",
+        image: "src/assets/PythonCert1.png"
+    },
+    {
+        title: "Python Essential 2",
+        image: "src/assets/PythonCert2.png"
+    },
+    {
+        title: "JavaScript Essential 1",
+        image: "src/assets/Js1Cert.png"
+    },
+    {
+        title: "JavaScript Essential 2",
+        image: "src/assets/Js2Cert.png"
+    },
+    {
+        title: "C++ Essential 1",
+        image: "src/assets/C++1.png"
+    },
+    {
+        title: "Computer Science 1",
+        image: "src/assets/CS1.png"
+    },
+];
+
+const VISIBLECARDS = 5
 
 const About: React.FC = () => {
     const skills = [
@@ -11,6 +39,35 @@ const About: React.FC = () => {
         { name: 'Java', level: 50 },
         { name: 'UI/UX', level: 50 }
     ];
+
+    const [startIdx, setStartIdx] = useState(0);
+    const timeoutRef = useRef<number | null>(null);
+
+    useEffect(() => {
+        timeoutRef.current = setInterval(() => {
+            setStartIdx((prev) => (prev + 1) % Certifications.length);
+        }, 2500);
+
+        return () => {
+            if (timeoutRef.current) clearInterval(timeoutRef.current);
+        }
+    }, [startIdx]);
+
+    const Visible_Cards = Array.from({ length: VISIBLECARDS }, (_, i) =>
+        Certifications[(startIdx + i) % Certifications.length]
+    )
+
+    const PrevImg = () => {
+        setStartIdx((prev) => 
+            prev === 0 ? Certifications.length - 1 : prev - 1
+        );
+    };
+
+    const NextImg = () => {
+        setStartIdx((prev) =>
+            (prev + 1) % Certifications.length
+        );
+    };
 
     return (
         <div className="about">
@@ -31,44 +88,31 @@ const About: React.FC = () => {
                                 or sharing knowledge with the developer community through blog posts and mentorship.
                             </p>
                         </div>
-                        <div className="about-Image fade-in">
-                            <img src="src/assets/Img1.jpg" alt="Me" />
+                        <div className="about-Image fade-in-up">
+                            <img src="src/assets/Eorico.png" alt="Me" />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="stats">
+            <section className="Cert-Carousel">
                 <div className="container">
-                    <div className="stats-Grid">
-                        <div className="stats-Card fade-in-up">
-                            <div className="stats-Icon">
-                                <Code size={32}/>
-                            </div>
-                            <h3>7+</h3>
-                            <p>Project </p>
+                    <h2 className="section-Title">Certificationss</h2>
+                    <div className="carousel multi-carousel">
+                        <button className="carousel-btn" onClick={PrevImg}>&lt;</button>
+                        <div className="carousel-Track">
+                            {Visible_Cards.map((cert, idx) => (
+                                    <div className="carousel-card" key={idx}>
+                                    <img 
+                                        src={cert.image} 
+                                        alt={cert.title} 
+                                        className="cert-image"
+                                    />
+                                    <p className="cert-Title">{cert.title}</p>
+                                </div>
+                            ))}
                         </div>
-                        <div className="stats-Card fade-in-up">
-                            <div className="stats-Icon">
-                                <User size={32}/>
-                            </div>
-                            <h3>7</h3>
-                            <p>Clients </p>
-                        </div>
-                        <div className="stats-Card fade-in-up">
-                            <div className="stats-Icon">
-                                <Award size={32}/>
-                            </div>
-                            <h3>1+</h3>
-                            <p>Year Experience</p>
-                        </div>
-                        <div className="stats-Card fade-in-up">
-                            <div className="stats-Icon">
-                                <Palette size={32}/>
-                            </div>
-                            <h3>10+</h3>
-                            <p>Designs Created</p>
-                        </div>
+                        <button className="carousel-btn" onClick={NextImg}>&gt;</button>
                     </div>
                 </div>
             </section>
@@ -119,7 +163,7 @@ const About: React.FC = () => {
                             <div className="timeline-Marker"></div>
                             <div className="timeline-Content">
                                 <h3>Frontend Developer</h3>
-                                <p className="timeline-Date">2023 - Present</p>
+                                <p className="timeline-Date">2024 - Present</p>
                                 <p>Focused on creating responsive, accessible user interface using modern frameworks and best practices in UI/UX design.</p>
                             </div>
                         </div>
@@ -127,7 +171,7 @@ const About: React.FC = () => {
                             <div className="timeline-Marker"></div>
                             <div className="timeline-Content">
                                 <h3>Backend Developer</h3>
-                                <p className="timeline-Date">2024 - Present</p>
+                                <p className="timeline-Date">2023 - Present</p>
                                 <p>Started to program in python and mastering the principles. Then learning java and c# for game development.</p>
                             </div>
                         </div>
