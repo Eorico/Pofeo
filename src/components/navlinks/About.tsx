@@ -89,7 +89,7 @@ const About: React.FC = () => {
                             </p>
                         </div>
                         <div className="about-Image fade-in-up">
-                            <img src="/assets/Eorico.png" alt="Me" />
+                            <img src="/assets/ProfPic.png" alt="Me" />
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ const About: React.FC = () => {
 
             <section className="Cert-Carousel">
                 <div className="container">
-                    <h2 className="section-Title">Certificationss</h2>
+                    <h2 className="section-Title">Certifications</h2>
                     <div className="carousel multi-carousel">
                         <button className="carousel-btn" onClick={PrevImg}>&lt;</button>
                         <div className="carousel-Track">
