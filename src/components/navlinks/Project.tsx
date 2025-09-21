@@ -33,39 +33,9 @@ const Project: React.FC = () => {
       image: "https://eorico.github.io/PersonalPortFolio/images/AMG.png",
       description: "A modern, responsive portfolio website with smooth animations and interactive elements. Built with performance and accessibility in mind.",
       technologies: ["React", "CSS3", "Framer Motion", "Netlify"],
-      liveUrl: "https://eorico.github.io/PortFolioEo/",
+      liveUrl: "https://port-folio-eo-rnxj.vercel.app/",
       githubUrl: "https://github.com/Eorico/PortFolioEo"
     },
-    {
-      id: 4,
-      title: "Todo App",
-      category: "Web Application",
-      image: "https://github.com/Eorico/PortFolioEo/blob/main/TodoApp.png?raw=true",
-      description: "A comprehensive todo application with user authentication, task management, and real-time updates.",
-      technologies: ["React", "CSS3", "ReactLibrary"],
-      liveUrl: "https://eorico.github.io/TaskApp/",
-      githubUrl: "https://github.com/Eorico/TaskApp"
-    },
-    {
-      id: 5,
-      title: "Gym Website",
-      category: "Web Design",
-      image: "https://eorico.github.io/PersonalPortFolio/images/GYM.png?raw=true",
-      description: "A fitness-focused website with workout plans, nutrition guides, and community features. Built with modern web development practices.",
-      technologies: ["HTML5", "CSS3", "Vanilla JavaScript", "Django"],
-      liveUrl: "https://github.com/Eorico/Gym-Website",
-      githubUrl: "https://github.com/Eorico/Gym-Website"
-    },
-    {
-      id: 6,
-      title: "Django-Portfolio",
-      category: "Web Application",
-      image: "https://eorico.github.io/PersonalPortFolio/images/AMG.png",
-      description: "A personal portfolio website built with Django, showcasing my projects and skills.",
-      technologies: ["Django", "HTML5", "CSS3", "JavaScript"],
-      liveUrl: "https://github.com/Eorico/django-portfolio",
-      githubUrl: "https://github.com/Eorico/django-portfolio"
-    }
   ];
 
   const categories = ["All", "Web Application", "Python Game Development", "Web Design"];
