@@ -10,7 +10,7 @@ const Project: React.FC = () => {
       id: 1,
       title: "Financial Tracker Application",
       category: "Web Application",
-      image: "/assets/Showcase.png",
+      image: "/assets/FinanceWeb.gif",
       description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
       technologies: ["React", "Node.js", "MongoDB", "Express"],
       liveUrl: "https://financeweb.onrender.com",
@@ -20,7 +20,7 @@ const Project: React.FC = () => {
       id: 2,
       title: "Python Game OOP-SOLID principles",
       category: "Python Game Development",
-      image: "https://github.com/Eorico/Python-Project/blob/main/py3.png?raw=true",
+      image: "/assets/Python3.gif",
       description: "A Python-based game that demonstrates OOP and SOLID principles. Features include modular design, unit testing, and a clean architecture.",
       technologies: ["Python", "OOP", "SOLID"],
       liveUrl: "https://github.com/Eorico/Python-Project",
@@ -30,11 +30,21 @@ const Project: React.FC = () => {
       id: 3,
       title: "Portfolio Website",
       category: "Web Design",
-      image: "/assets/Amogus.png",
+      image: "/assets/PortFolio1.0.gif",
       description: "A modern, responsive portfolio website with smooth animations and interactive elements. Built with performance and accessibility in mind.",
       technologies: ["React", "CSS3", "Framer Motion", "Netlify"],
       liveUrl: "https://port-folio-eo-rnxj.vercel.app/",
       githubUrl: "https://github.com/Eorico/PortFolioEo"
+    },
+    {
+      id: 4,
+      title: "Gym Website",
+      category: "Web Application",
+      image: "/assets/Gym-Web.gif",
+      description: "A gym website with class schedules, trainer profiles, and membership plans. Built with React and integrated with a backend for dynamic content.",
+      technologies: ["HTML5", "CSS3", "Python3", "Django", "JavaScript"],
+      liveUrl: "https://gym-web-5eko.onrender.com",
+      githubUrl: "https://github.com/Eorico/Gym-Website"
     },
   ];
 
