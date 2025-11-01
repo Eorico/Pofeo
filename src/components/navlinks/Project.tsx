@@ -29,7 +29,7 @@ const Project: React.FC = () => {
     {
       id: 3,
       title: "Portfolio Website",
-      category: "Web Design",
+      category: "Web Application",
       image: "/assets/PortFolio1.0.gif",
       description: "A modern, responsive portfolio website with smooth animations and interactive elements. Built with performance and accessibility in mind.",
       technologies: ["React", "CSS3", "Framer Motion", "Netlify"],
@@ -46,9 +46,19 @@ const Project: React.FC = () => {
       liveUrl: "https://gym-web-5eko.onrender.com",
       githubUrl: "https://github.com/Eorico/Gym-Website"
     },
+    {
+      id: 5,
+      title: "Cray Fish Simulator - Machine Learning",
+      category: "Python Game Development",
+      image: "/assets/crayfish.png",
+      description: "A simulation of crayfish and face detection using machine learning techniques. Built with Python and OpenCV.",
+      technologies: ["Python3", "OpenCV", "Machine Learning"],
+      liveUrl: "https://github.com/Eorico/CrayFish_Prototype/tree/main",
+      githubUrl: "https://github.com/Eorico/CrayFish_Prototype/tree/main"
+    },
   ];
 
-  const categories = ["All", "Web Application", "Python Game Development", "Web Design"];
+  const categories = ["All", "Web Application", "Python Game Development", "Mobile Application"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects = activeCategory === "All" 
