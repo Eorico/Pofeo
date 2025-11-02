@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ExternalLink, Github, X } from 'lucide-react';
 import '../../styles/Project.css';
 
-const Project: React.FC = () => {
+const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const projects = [
@@ -104,7 +104,10 @@ const Project: React.FC = () => {
           </div>
 
           <div className="projects-grid">
-            {filteredProjects.map((project, index) => (
+            {filteredProjects.length === 0 ? (
+              <p style={{ textAlign: 'center' }}>No projects found in this category.</p>
+            )
+            : (filteredProjects.map((project, index) => (
               <div
                 key={project.id}
                 className="project-card fade-in-up"
@@ -135,7 +138,7 @@ const Project: React.FC = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            )))}
           </div>
         </div>
       </section>
@@ -159,10 +162,14 @@ const Project: React.FC = () => {
                 ))}
               </div>
               <div className="modal-actions">
-                <a href={selectedProjectData.liveUrl} className="btn">
-                  <ExternalLink size={20} />
-                  Live Demo
-                </a>
+                {
+                  selectedProjectData.category !== "Python Game Development" && (
+                    <a href={selectedProjectData.liveUrl} className="btn">
+                      <ExternalLink size={20} />
+                      Live Demo
+                    </a>
+                  )
+                }
                 <a href={selectedProjectData.githubUrl} className="btn btn-outline">
                   <Github size={20} />
                   View Code
@@ -176,4 +183,4 @@ const Project: React.FC = () => {
   );
 };
 
-export default Project;
+export default Projects;
