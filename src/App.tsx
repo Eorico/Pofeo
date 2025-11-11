@@ -7,7 +7,7 @@ import Contact from "./components/navlinks/Contact";
 import Footer from "./components/navlinks/Footer";
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div className="app">
@@ -25,5 +25,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
