@@ -56,6 +56,16 @@ const Projects: React.FC = () => {
       liveUrl: "https://github.com/Eorico/CrayFish_Prototype/tree/main",
       githubUrl: "https://github.com/Eorico/CrayFish_Prototype/tree/main"
     },
+    {
+      id: 6,
+      title: "Learning page: Chemistry Hub",
+      category: "learning page - JavaScript",
+      image: "/assets/chemhub.png",
+      description: "a learning page to learn chemistry concepts built with HTML, CSS, and JavaScript. then it is integrated with a react javascript.",
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      liveUrl: "https://chemistry-learning-hub.onrender.com/",
+      githubUrl: "https://github.com/Eorico/eSignie-App"
+    }
   ];
 
   const categories = ["All", "Web Application", "Python Game Development", "Mobile Application"];

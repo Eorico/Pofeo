@@ -79,11 +79,11 @@ const About: React.FC = () => {
                             <p className="about-Lead">I'm a passionate full-stack developer with a years of experience
                                 creating digital solutions that make a difference.
                             </p>
-                            <p>My journey began with a curiosity about how things work on the web, and it has evolved into a deep passion for creating
+                            <p style={{ fontSize: 19.9 }}>My journey began with a curiosity about how things work on the web, and it has evolved into a deep passion for creating
                                 beautiful, functionaln and user-centered applications. I believe in writing clean code, following best practices
                                 , and continuously learning new technologies.
                             </p>
-                            <p>
+                            <p style={{ fontSize: 19.9 }}>
                                 When I'm not coding, you can find me exploring new design trends, contributing to open source projects, 
                                 or sharing knowledge with the developer community through blog posts and mentorship.
                             </p>
