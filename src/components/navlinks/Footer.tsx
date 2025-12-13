@@ -76,7 +76,13 @@ const Footer: React.FC = () => {
         <div className="container">
           <div className="footer-bottom-content">
             <p className="footer-copyright">
-              © {currentYear} Portfolio. Made with <Heart size={16} className="heart-icon" /> by Eorico Gonzales
+              © {currentYear} Portfolio. Made with {' '} 
+              <img 
+                src="/animation/heart.gif" 
+                alt="Dancing heart" 
+                className='heart-icon'
+                /> {' '} 
+              by Eorico Gonzales
             </p>
             <div className="footer-bottom-links">
               <a href="#">Privacy Policy</a>

@@ -193,7 +193,12 @@
 }
 
 .heart-icon {
-  color: #ef4444;
+  margin-top: -20px;
+  margin-bottom: -10px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  vertical-align: middle;
   animation: heartbeat 2s ease-in-out infinite;
 }
 
