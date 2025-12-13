@@ -108,13 +108,13 @@
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #0ce2d7;  
+  border-right: 10px solid #0ce2d7;  
   animation: typing 3s steps(16) infinite, blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 13.9ch; }  
+  to { width: 16ch; }  
 }
 
 @keyframes blink {

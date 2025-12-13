@@ -4,6 +4,7 @@ import { Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import '../../styles/About.css';
+import Particles from "../ui/Background";
 
 const Certifications = [
     {
@@ -116,204 +117,274 @@ const About: React.FC = () => {
     return (
         <div className="about">
             <section className="about-Self">
-                <div className="container">
-                    <div className="about-Content">
-                        <div className="about-Text fade-in-up">
-                            <h1>About Me</h1>
-                            <p className="about-Lead">I'm a passionate full-stack developer with a years of experience
-                                creating digital solutions for contribution in the field of software developers.
-                            </p>
-                            <p style={{ fontSize: 19.9 }}>My journey began with a curiosity about how things work on the web, and it has evolved into a deep passion for creating
-                                beautiful, functionaln and user-centered applications. I believe in writing clean code, following best practices
-                                , and continuously learning new technologies.
-                            </p>
-                            <p style={{ fontSize: 19.9 }}>
-                                When I'm not coding, you can find me exploring new design trends, contributing to open source projects, 
-                                or sharing knowledge with the developer community through blog posts and mentorship.
-                            </p>
-                        </div>
-                        <div className="about-Image fade-in-up">
-                            <img src="/assets/ProfPic.png" alt="Me" />
+            <div className="paticles-container">
+            <Particles
+                particleColors={['#ffffff', '#ffffff']}
+                particleCount={200}
+                particleSpread={10}
+                speed={0.1}
+                particleBaseSize={100}
+                moveParticlesOnHover={true}
+                alphaParticles={false}
+                disableRotation={false}
+            />
+                <div className="about-wrapper"> 
+                    <div className="container">
+                        <div className="about-Content">
+                            <div className="about-Text fade-in-up">
+                                <h1>About Me</h1>
+                                <p className="about-Lead">I'm a passionate full-stack developer with a years of experience
+                                    creating digital solutions for contribution in the field of software developers.
+                                </p>
+                                <p style={{ fontSize: 19.9 }}>My journey began with a curiosity about how things work on the web, and it has evolved into a deep passion for creating
+                                    beautiful, functionaln and user-centered applications. I believe in writing clean code, following best practices
+                                    , and continuously learning new technologies.
+                                </p>
+                                <p style={{ fontSize: 19.9 }}>
+                                    When I'm not coding, you can find me exploring new design trends, contributing to open source projects, 
+                                    or sharing knowledge with the developer community through blog posts and mentorship.
+                                </p>
+                            </div>
+                            <div className="about-Image fade-in-up">
+                                <img src="/assets/ProfPic.png" alt="Me" />
+                            </div>
                         </div>
                     </div>
                 </div>
+                
+            </div>
             </section>
 
-            <section className="features">
-                <div className="container">
-                    <h2 className="section-Title">What I Do</h2>
-                    <div className="features-grid">
-                    <div className="feature-card fade-in-up">
-                        <div className="feature-icon">
-                        <div className="icon-circle"><Laptop size={30}/></div>
+            <section className="features">  
+                <div className="paticles-container">
+                <Particles
+                    particleColors={['#ffffff', '#ffffff']}
+                    particleCount={200}
+                    particleSpread={10}
+                    speed={0.1}
+                    particleBaseSize={100}
+                    moveParticlesOnHover={true}
+                    alphaParticles={false}
+                    disableRotation={false}
+                />
+                    <div className="features-wrapper about-wrapper "> 
+                        <div className="container">
+                            <h2 className="section-Title">What I Do</h2>
+                            <div className="features-grid">
+                            <div className="feature-card fade-in-up">
+                                <div className="feature-icon">
+                                <div className="icon-circle"><Laptop size={30}/></div>
+                                </div>
+                                <h3>Web Development</h3>
+                                <p>Building responsive, modern websites using the latest technologies and best practices.</p>
+                            </div>
+                            <div className="feature-card fade-in-up">
+                                <div className="feature-icon">
+                                <div className="icon-circle"><Paintbrush size={30}/></div>
+                                </div>
+                                <h3>UI/UX Design</h3>
+                                <p>Creating intuitive and beautiful user interfaces that provide exceptional user experiences.</p>
+                            </div>
+                            <div className="feature-card fade-in-up">
+                                <div className="feature-icon">
+                                <div className="icon-circle"><Smartphone size={30}/></div>
+                                </div>
+                                <h3>Mobile Apps</h3>
+                                <p>Developing cross-platform mobile applications that work seamlessly on all devices.</p>
+                            </div>
+                            </div>
                         </div>
-                        <h3>Web Development</h3>
-                        <p>Building responsive, modern websites using the latest technologies and best practices.</p>
-                    </div>
-                    <div className="feature-card fade-in-up">
-                        <div className="feature-icon">
-                        <div className="icon-circle"><Paintbrush size={30}/></div>
-                        </div>
-                        <h3>UI/UX Design</h3>
-                        <p>Creating intuitive and beautiful user interfaces that provide exceptional user experiences.</p>
-                    </div>
-                    <div className="feature-card fade-in-up">
-                        <div className="feature-icon">
-                        <div className="icon-circle"><Smartphone size={30}/></div>
-                        </div>
-                        <h3>Mobile Apps</h3>
-                        <p>Developing cross-platform mobile applications that work seamlessly on all devices.</p>
-                    </div>
                     </div>
                 </div>
             </section>
 
             <section className="Cert-Carousel">
-                <div className="container">
-                    <h2 className="section-Title">Certifications</h2>
-                    <div className="carousel multi-carousel">
-                        <button className="carousel-btn" onClick={PrevImg}>&lt;</button>
-                        <div className="carousel-Track">
-                            {Visible_Cards.map((cert, idx) => (
-                                    <div className="carousel-card" key={idx}>
-                                    <img 
-                                        src={cert.image} 
-                                        alt={cert.title} 
-                                        className="cert-image"
-                                    />
-                                    <p className="cert-Title">{cert.title}</p>
+                 <div className="paticles-container">
+                    <Particles
+                        particleColors={['#ffffff', '#ffffff']}
+                        particleCount={200}
+                        particleSpread={10}
+                        speed={0.1}
+                        particleBaseSize={100}
+                        moveParticlesOnHover={true}
+                        alphaParticles={false}
+                        disableRotation={false}
+                    />
+                    <div className="Cert-wrapper about-wrapper "> 
+                        <div className="container">
+                            <h2 className="section-Title">Certifications</h2>
+                            <div className="carousel multi-carousel">
+                                <button className="carousel-btn" onClick={PrevImg}>&lt;</button>
+                                <div className="carousel-Track">
+                                    {Visible_Cards.map((cert, idx) => (
+                                            <div className="carousel-card" key={idx}>
+                                            <img 
+                                                src={cert.image} 
+                                                alt={cert.title} 
+                                                className="cert-image"
+                                            />
+                                            <p className="cert-Title">{cert.title}</p>
+                                        </div>
+                                    ))}
                                 </div>
-                            ))}
+                                <button className="carousel-btn" onClick={NextImg}>&gt;</button>
+                            </div>
                         </div>
-                        <button className="carousel-btn" onClick={NextImg}>&gt;</button>
                     </div>
                 </div>
             </section>
 
             <section className="skills">
-                <div className="container">
-                    <h2 className="section-Title">Skills & Expertise</h2>
-                    <div className="skills-Content">
-                        <div className="skills-Text">
-                            <h3>Technical Skills</h3>
-                            <p>I specialize in modern web technologies and have extensive experience with both fronted and backend development.
-                                My expertise spans across various programming languages, frameworks, and tools.
-                            </p>
+                <div className="paticles-container">
+                    <Particles
+                        particleColors={['#ffffff', '#ffffff']}
+                        particleCount={200}
+                        particleSpread={10}
+                        speed={0.1}
+                        particleBaseSize={100}
+                        moveParticlesOnHover={true}
+                        alphaParticles={false}
+                        disableRotation={false}
+                    />
+                    <div className="skills-wrapper about-wrapper "> 
+                        <div className="container">
+                            <h2 className="section-Title">Skills & Expertise</h2>
+                            <div className="skills-Content">
+                                <div className="skills-Text">
+                                    <h3>Technical Skills</h3>
+                                    <p>I specialize in modern web technologies and have extensive experience with both fronted and backend development.
+                                        My expertise spans across various programming languages, frameworks, and tools.
+                                    </p>
 
-                            <img 
-                                src="/assets/skillsSet.png" 
-                                alt="skillsSet"
-                                className="skillSetIcon" 
-                            />
-                        </div>
-                        <div className="skills-List">
-                            {skills.map((skill, index) => (
-                                <div key={index} className="skill-Item fade-in-up">
-                                    <div className="skill-Header">
-                                        <span className="skill-Name">{skill.name}</span>
-                                        <span className="skill-Percent">{skill.level}%</span>
-                                    </div>
-                                    <div className="skill-Bar">
-                                        <div 
-                                            className="skill-Fill"
-                                            style={{ width: `${skill.level}%` }}
-                                        ></div>
-                                    </div>
+                                    <img 
+                                        src="/assets/skillsSet.png" 
+                                        alt="skillsSet"
+                                        className="skillSetIcon" 
+                                    />
                                 </div>
-                            ))}
+                                <div className="skills-List">
+                                    {skills.map((skill, index) => (
+                                        <div key={index} className="skill-Item fade-in-up">
+                                            <div className="skill-Header">
+                                                <span className="skill-Name">{skill.name}</span>
+                                                <span className="skill-Percent">{skill.level}%</span>
+                                            </div>
+                                            <div className="skill-Bar">
+                                                <div 
+                                                    className="skill-Fill"
+                                                    style={{ width: `${skill.level}%` }}
+                                                ></div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="journey">
+                <div className="journey-particles paticles-container">
+                    <Particles
+                        particleColors={['#ffffff', '#ffffff']}
+                        particleCount={600}
+                        particleSpread={12}
+                        speed={0.1}
+                        particleBaseSize={200}
+                        moveParticlesOnHover={true}
+                        alphaParticles={false}
+                        disableRotation={false}
+                    />
+                <div className="journey-wrapper about-wrapper "> 
+                        <div className="container">
+                            <h2 className="section-Title">My Journey</h2>
+                            <div className="timeline">
+                                <div className="timeline-Item fade-in-up">
+                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-Content">
+                                        <h3>Python - Structure Programming/OOP</h3>
+                                        <p className="timeline-Date">2023</p>
+                                        <p> - studied basic fundamentals and structure programming in python.</p>
+                                        <p> - studied object-oriented programming in python.</p>
+                                        <p> - learn to apply SOLID principles in python.</p>
+                                    </div>
+                                </div>
 
-                <div className="container">
-                    <h2 className="section-Title">My Journey</h2>
-                    <div className="timeline">
-                        <div className="timeline-Item fade-in-up">
-                            <div className="timeline-Marker"></div>
-                            <div className="timeline-Content">
-                                <h3>Python - Structure Programming/OOP</h3>
-                                <p className="timeline-Date">2023</p>
-                                <p> - studied basic fundamentals and structure programming in python.</p>
-                                <p> - studied object-oriented programming in python.</p>
-                                <p> - learn to apply SOLID principles in python.</p>
+                                <div className="timeline-Item fade-in-up">
+                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-Content">
+                                        <h3>HTM/CSS/JS</h3>
+                                        <p className="timeline-Date">2023</p>
+                                        <p> - learned the basics of web development using HTML, CSS, and JavaScript.</p>
+                                        <p> - created several small projects to practice my skills.</p>
+                                        <p> - focused on creating responsive, accessible user interface using modern frameworks and best practices in UI/UX design.</p>
+                                        <p> - learned to apply interactive elements using JavaScript.</p>
+                                        <p> - Also applied best practices in javascript.</p>
+                                    </div>
+                                </div>
+
+                                <div className="timeline-Item fade-in-up">
+                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-Content">
+                                        <h3>Full Stack Developer - Django</h3>
+                                        <p className="timeline-Date">2024</p>
+                                        <p> - studied the fundamentals of Django and its MVC architecture.</p>
+                                        <p> - learned to build RESTful APIs using Django REST Framework.</p>
+                                        <p> - created full-stack applications using Django, HTML, CSS, and JavaScript.</p>
+                                        <p> - focuses in authentication and security.</p>
+                                        <p> - learned to use github repositories and version control.</p>
+                                    </div>
+                                </div>
+
+                                <div className="timeline-Item fade-in-up">
+                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-Content">
+                                        <h3>Frameworks - React and React Native</h3>
+                                        <p className="timeline-Date">2024 - present</p>
+                                        <p> - learned the fundamentals of React and React Native.</p>
+                                        <p> - created responsive web and mobile applications using React and React Native.</p>
+                                        <p> - focused on building reusable components and managing state with Redux.</p>
+                                        <p> - learned to integrate third-party APIs and services.</p>
+                                        <p> - created my first "Full stack Web Application" using node.js and express.js</p>
+                                        <p> - manage to learn how to have communication between frontend and backend. By the use of axios.</p>
+                                    </div>
+                                </div>
+
+                                <div className="timeline-Item fade-in-up">
+                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-Content">
+                                        <h3>Mobile Developer - React Native and Android Studio/Kotlin</h3>
+                                        <p className="timeline-Date">2024 - present</p>
+                                        <p> - study the workflow and analyze best conceptual frameworks approaches</p>
+                                        <p> - learned to build cross-platform mobile applications using React Native.</p>
+                                        <p> - also learned to build native android applications using Android Studio and Kotlin.</p>
+                                        <p> - focuses on performance optimization and user experience.</p>
+                                        <p> - also learned to deploy and convert to apk/abb.</p>
+                                        <p> - learned to deploy mobile applications to the App Store and Google Play Store.</p>
+                                    </div>
+                                </div>
+
+                                <div className="timeline-Item fade-in-up">
+                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-Content">
+                                        <h3>Arduino and Raspberry Pi</h3>
+                                        <p className="timeline-Date">2025 - present</p>
+                                        <p> - studied the fundamentals of Arduino and Raspberry Pi.</p>
+                                        <p> - learned the basics of c++ and python embedded programming.</p>
+                                        <p> - learned to build simple IoT projects using Arduino.</p>
+                                        <p> 
+                                            - currently undergoing on a research project for integration of IOT devices by the help of raspberry pi for machine learning.
+                                            <br /> - focuses on automation and smart systems.
+                                            <br /> - learning to integrate sensors and actuators with microcontrollers.
+                                            <br /> - focuses on data collection and analysis.
+                                            <br /> - focuses on contributing to aquaculture technology through automation and smart systems.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-
-                        <div className="timeline-Item fade-in-up">
-                            <div className="timeline-Marker"></div>
-                            <div className="timeline-Content">
-                                <h3>HTM/CSS/JS</h3>
-                                <p className="timeline-Date">2023</p>
-                                <p> - learned the basics of web development using HTML, CSS, and JavaScript.</p>
-                                <p> - created several small projects to practice my skills.</p>
-                                <p> - focused on creating responsive, accessible user interface using modern frameworks and best practices in UI/UX design.</p>
-                                <p> - learned to apply interactive elements using JavaScript.</p>
-                                <p> - Also applied best practices in javascript.</p>
-                            </div>
-                        </div>
-
-                          <div className="timeline-Item fade-in-up">
-                            <div className="timeline-Marker"></div>
-                            <div className="timeline-Content">
-                                <h3>Full Stack Developer - Django</h3>
-                                <p className="timeline-Date">2024</p>
-                                <p> - studied the fundamentals of Django and its MVC architecture.</p>
-                                <p> - learned to build RESTful APIs using Django REST Framework.</p>
-                                <p> - created full-stack applications using Django, HTML, CSS, and JavaScript.</p>
-                                <p> - focuses in authentication and security.</p>
-                                <p> - learned to use github repositories and version control.</p>
-                            </div>
-                        </div>
-
-                         <div className="timeline-Item fade-in-up">
-                            <div className="timeline-Marker"></div>
-                            <div className="timeline-Content">
-                                <h3>Frameworks - React and React Native</h3>
-                                <p className="timeline-Date">2024 - present</p>
-                                <p> - learned the fundamentals of React and React Native.</p>
-                                <p> - created responsive web and mobile applications using React and React Native.</p>
-                                <p> - focused on building reusable components and managing state with Redux.</p>
-                                <p> - learned to integrate third-party APIs and services.</p>
-                                <p> - created my first "Full stack Web Application" using node.js and express.js</p>
-                                <p> - manage to learn how to have communication between frontend and backend. By the use of axios.</p>
-                            </div>
-                        </div>
-
-                        <div className="timeline-Item fade-in-up">
-                            <div className="timeline-Marker"></div>
-                            <div className="timeline-Content">
-                                <h3>Mobile Developer - React Native and Android Studio/Kotlin</h3>
-                                <p className="timeline-Date">2024 - present</p>
-                                <p> - study the workflow and analyze best conceptual frameworks approaches</p>
-                                <p> - learned to build cross-platform mobile applications using React Native.</p>
-                                <p> - also learned to build native android applications using Android Studio and Kotlin.</p>
-                                <p> - focuses on performance optimization and user experience.</p>
-                                <p> - also learned to deploy and convert to apk/abb.</p>
-                                <p> - learned to deploy mobile applications to the App Store and Google Play Store.</p>
-                            </div>
-                        </div>
-
-                        <div className="timeline-Item fade-in-up">
-                            <div className="timeline-Marker"></div>
-                            <div className="timeline-Content">
-                                <h3>Arduino and Raspberry Pi</h3>
-                                <p className="timeline-Date">2025 - present</p>
-                                <p> - studied the fundamentals of Arduino and Raspberry Pi.</p>
-                                <p> - learned the basics of c++ and python embedded programming.</p>
-                                <p> - learned to build simple IoT projects using Arduino.</p>
-                                <p> 
-                                    - currently undergoing on a research project for integration of IOT devices by the help of raspberry pi for machine learning.
-                                    <br /> - focuses on automation and smart systems.
-                                    <br /> - learning to integrate sensors and actuators with microcontrollers.
-                                    <br /> - focuses on data collection and analysis.
-                                    <br /> - focuses on contributing to aquaculture technology through automation and smart systems.
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
