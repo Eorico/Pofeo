@@ -121,7 +121,7 @@ const About: React.FC = () => {
                         <div className="about-Text fade-in-up">
                             <h1>About Me</h1>
                             <p className="about-Lead">I'm a passionate full-stack developer with a years of experience
-                                creating digital solutions that make a difference.
+                                creating digital solutions for contribution in the field of software developers.
                             </p>
                             <p style={{ fontSize: 19.9 }}>My journey began with a curiosity about how things work on the web, and it has evolved into a deep passion for creating
                                 beautiful, functionaln and user-centered applications. I believe in writing clean code, following best practices
