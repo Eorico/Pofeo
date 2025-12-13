@@ -209,14 +209,14 @@
 }
 
 .skills {
-    padding: 6rem 0;
+    padding: 3rem;
     background: #f6f1e946;
 }
 
 .skills-Content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 4rem;
+    gap: 5rem;
     align-items: start;
 }
 
@@ -231,14 +231,16 @@
 }
 
 .skills-List {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
     gap: 1.5rem;
+    width: 850px;
 }
 
 .skill-Item {
     background: white;
-    padding: 1.5rem;
+    padding: 1.6rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.369);
     transition: all 0.3s ease;

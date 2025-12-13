@@ -38,10 +38,14 @@ const About: React.FC = () => {
     const skills = [
         { name: 'React', level: 60 },
         { name: 'TypeScript', level: 40 },
-        { name: 'Node.js', level: 60 },
+        { name: 'Node.js', level: 90 },
         { name: 'Python', level: 80 },
         { name: 'Java', level: 50 },
-        { name: 'UI/UX', level: 50 }
+        { name: 'Aruino', level: 50 },
+        { name: 'C++', level: 50 },
+        { name: 'RaspBerry Pi', level: 50 },
+        { name: 'Github', level: 100 },
+        { name: 'Mobile App - React Native/Android Studio', level: 80 },
     ];
 
     const [startIdx, setStartIdx] = useState(0);
