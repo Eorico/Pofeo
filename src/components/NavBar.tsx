@@ -55,8 +55,8 @@ const Nav: React.FC = () => {
         <nav className={`navigation ${scrolled ? 'scrolled' : ''}`}>
             <div className="navContainer">
                 <Link to="/" className="navLogo" onClick={closeMenu}>
-                    <User size={24}/>
-                    <span>PoFeo</span>
+                    <User size={33}/>
+                    <span>ProF-Eo</span>
                 </Link>
                 <div className={`navMenu ${openMenu ? 'active' : ''}`}>
                     {navItem.map((item) => (

@@ -19,8 +19,8 @@
 
 .navContainer {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin: 0 22px;
+    padding: 0 -150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,8 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 35px;
+    font-style: italic;
     font-weight: 700;
     color: #DDE6ED;
     text-decoration: none;
@@ -52,7 +53,7 @@
     color: #DDE6ED;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 20px;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: all 0.3s ease;

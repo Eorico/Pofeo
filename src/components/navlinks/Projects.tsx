@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
     {
       id: 6,
       title: "Learning page: Chemistry Hub",
-      category: "learning page - JavaScript",
+      category: "Web Application",
       image: "/assets/chemhub.png",
       description: "a learning page to learn chemistry concepts built with HTML, CSS, and JavaScript. then it is integrated with a react javascript.",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
