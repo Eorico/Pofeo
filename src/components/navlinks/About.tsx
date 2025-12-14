@@ -67,7 +67,7 @@ const VISIBLECARDS = 5
 const About: React.FC = () => {
     const skills = [
         { name: 'React', level: 60 },
-        { name: 'TypeScript', level: 40 },
+        { name: 'TypeScript', level: 80 },
         { name: 'Node.js', level: 90 },
         { name: 'Python', level: 80 },
         { name: 'Java', level: 50 },
