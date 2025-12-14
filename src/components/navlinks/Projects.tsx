@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, X } from 'lucide-react';
 import '../../styles/Project.css';
+import Particles from '../ui/Background';
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -100,55 +101,69 @@ const Projects: React.FC = () => {
       </section>
 
       <section className="project-content">
-        <div className="container">
-          <div className="filter-tabs fade-in-up">
-            {categories.map(category => (
-              <button
-                key={category}
-                className={`filter-tab ${activeCategory === category ? 'active' : ''}`}
-                onClick={() => setActiveCategory(category)}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
+        <div className="paticles-container">
+            <Particles
+                particleColors={['#ffffff', '#ffffff']}
+                particleCount={200}
+                particleSpread={10}
+                speed={0.1}
+                particleBaseSize={100}
+                moveParticlesOnHover={true}
+                alphaParticles={false}
+                disableRotation={false}
+            />
+            <div className="project-wrapper"> 
+            <div className="container">
+              <div className="filter-tabs fade-in-up">
+                {categories.map(category => (
+                  <button
+                    key={category}
+                    className={`filter-tab ${activeCategory === category ? 'active' : ''}`}
+                    onClick={() => setActiveCategory(category)}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
 
-          <div className="projects-grid">
-            {filteredProjects.length === 0 ? (
-              <p style={{ textAlign: 'center' }}>No projects found in this category.</p>
-            )
-            : (filteredProjects.map((project, index) => (
-              <div
-                key={project.id}
-                className="project-card fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-                onClick={() => openModal(project.id)}
-              >
-                <div className="project-image">
-                  <img src={project.image} alt={project.title} />
-                  <div className="project-overlay">
-                    <div className="project-actions">
-                      <button className="action-btn">
-                        <ExternalLink size={20} />
-                      </button>
-                      <button className="action-btn">
-                        <Github size={20} />
-                      </button>
+              <div className="projects-grid">
+                {filteredProjects.length === 0 ? (
+                  <p style={{ textAlign: 'center', color: 'white' }}>No projects found in this category.</p>
+                )
+                : (filteredProjects.map((project, index) => (
+                  <div
+                    key={project.id}
+                    className="project-card fade-in-up"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                    onClick={() => openModal(project.id)}
+                  >
+                    <div className="project-image">
+                      <img src={project.image} alt={project.title} />
+                      <div className="project-overlay">
+                        <div className="project-actions">
+                          <button className="action-btn">
+                            <ExternalLink size={20} />
+                          </button>
+                          <button className="action-btn">
+                            <Github size={20} />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="project-info">
+                      <h3>{project.title}</h3>
+                      <p className="project-category">{project.category}</p>
+                      <p className="project-description">{project.description}</p>
+                      <div className="project-tech">
+                        {project.technologies.map((tech, i) => (
+                          <span key={i} className="tech-tag">{tech}</span>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="project-info">
-                  <h3>{project.title}</h3>
-                  <p className="project-category">{project.category}</p>
-                  <p className="project-description">{project.description}</p>
-                  <div className="project-tech">
-                    {project.technologies.map((tech, i) => (
-                      <span key={i} className="tech-tag">{tech}</span>
-                    ))}
-                  </div>
-                </div>
+                )))}
               </div>
-            )))}
+            </div>
           </div>
         </div>
       </section>

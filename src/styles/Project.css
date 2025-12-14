@@ -3,7 +3,7 @@
 }
 
 .project-header {
-  padding: 10rem 0;
+  padding: 4.5rem 0;
   background: 
     linear-gradient(135deg, rgba(59, 69, 122, 0.424) 0%, rgba(97, 95, 99, 0.8) 100%),
     url('../assets/programmer.jpg') center/cover;
@@ -46,7 +46,15 @@
 }
 
 .project-content {
-  padding: 6rem 0;
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  background: #191919;
+}
+
+.project-wrapper {
+  position: relative;
+  z-index: 1; 
 }
 
 .filter-tabs {
@@ -62,7 +70,7 @@
   background: transparent;
   border: 2px solid #e5e7eb;
   border-radius: 25px;
-  color: #6b7280;
+  color: #ffffff;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -90,7 +98,7 @@
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 10px 5px rgba(60, 252, 246, 0.761);
   transition: all 0.3s ease;
   cursor: pointer;
   border: 1px solid #e5e7eb;
