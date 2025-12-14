@@ -2,6 +2,11 @@
   padding-top: 0rem;
 }
 
+.contact-wrapper {
+  position: relative;
+  z-index: 1; 
+}
+
 .contact-header {
   padding: 4rem 0;
   background: 
@@ -47,6 +52,9 @@
 
 .contact-content {
   padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+  background: #191919;
 }
 
 .contact-grid {
@@ -59,14 +67,14 @@
 .contact-info h2 {
   color: #f6f6f5;
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 3.5em;
   font-weight: 800;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .contact-info > p {
-  color: #6b7280;
+  color: #ffffff;
   margin-bottom: 2rem;
   line-height: 1.7;
 }
@@ -81,36 +89,36 @@
   gap: 1rem;
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: #f8fafc;
-  border-radius: 12px;
+  background: transparent;
+  border-radius: 22px;
+  border: 2px solid white;
   transition: all 0.3s ease;
 }
 
 .contact-method:hover {
-  background: #e2e8f0;
   transform: translateX(5px);
 }
 
 .method-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(45deg, #030303, #8d8d89);
+  background: linear-gradient(45deg, #ffffff, #525250);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(78, 76, 76);
   flex-shrink: 0;
 }
 
 .method-info h3 {
-  color: #1f2937;
+  color: #feffff;
   margin-bottom: 0.25rem;
   font-size: 1.1rem;
 }
 
 .method-info p {
-  color: #6b7280;
+  color: #ccced2;
   margin: 0;
   font-weight: 500;
 }
@@ -163,7 +171,7 @@
   color: #374151;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 18px;
 }
 
 .form-group input,
@@ -194,7 +202,7 @@
   color: white;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 8px;
+  border-radius: 5map-container0px;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -253,8 +261,9 @@
 }
 
 .contact-map {
-  background: #e2e3e3;
+  background: #131212;
   padding: 4rem 0;
+  position: relative;
 }
 
 .map-container {
@@ -265,8 +274,8 @@
   margin: 0 auto;
   padding: 0 2rem;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  box-shadow: 0 10px 30px rgba(244, 243, 243, 0.978);
 }
 
 .map-wrapper {
@@ -274,7 +283,7 @@
   width: 100%;
   margin-top: 10px;
   height: 580px;
-  border-radius: 12px;
+  border-radius: 100px;
   overflow: hidden;
 }
 
