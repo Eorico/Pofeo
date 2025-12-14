@@ -73,7 +73,7 @@ const Projects: React.FC = () => {
       category: "Mobile Application",
       image: "/assets/mobile-app.png",
       description: "a mobile application that allows users to sign documents electronically, built with React Native and integrated with a backend for document management.",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      technologies: ["JavaScript", "React Native", "TypeScript", "Firebase"],
       liveUrl: "/assets/e-signie.apk",
       githubUrl: "https://github.com/Eorico/eSignie-App"
     }
