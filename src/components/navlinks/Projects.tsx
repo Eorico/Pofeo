@@ -65,6 +65,16 @@ const Projects: React.FC = () => {
       description: "a learning page to learn chemistry concepts built with HTML, CSS, and JavaScript. then it is integrated with a react javascript.",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
       liveUrl: "https://chemistry-learning-hub.onrender.com/",
+      githubUrl: "https://github.com/Eorico/Chemistry-Learning-Hub"
+    },
+    {
+      id: 7,
+      title: "E-SIGNIE",
+      category: "Mobile Application",
+      image: "/assets/mobile-app.png",
+      description: "a mobile application that allows users to sign documents electronically, built with React Native and integrated with a backend for document management.",
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      liveUrl: "/assets/e-signie.apk",
       githubUrl: "https://github.com/Eorico/eSignie-App"
     }
   ];
@@ -188,12 +198,23 @@ const Projects: React.FC = () => {
               </div>
               <div className="modal-actions">
                 {
-                  selectedProjectData.category !== "Python Game Development" && (
-                    <a href={selectedProjectData.liveUrl} className="btn">
+                  selectedProjectData.category === "Mobile Application" ? (
+                    <a href={selectedProjectData.liveUrl} className="btn" download>
                       <ExternalLink size={20} />
-                      Live Demo
+                      Download APK
                     </a>
+                  ) 
+                  : 
+                  (
+
+                    selectedProjectData.category !== "Python Game Development" && (
+                      <a href={selectedProjectData.liveUrl} className="btn">
+                        <ExternalLink size={20} />
+                        Live Demo
+                      </a>
+                    )
                   )
+                
                 }
                 <a href={selectedProjectData.githubUrl} className="btn btn-outline">
                   <Github size={20} />
