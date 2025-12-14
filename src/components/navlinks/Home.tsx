@@ -40,7 +40,7 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            <div className="hero-Image">
+            <div className="hero-Image fade-in-up">
               <img 
                 src="/assets/EO.png" 
                 alt="eorico-gonzales" 

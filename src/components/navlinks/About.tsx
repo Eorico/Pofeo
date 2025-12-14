@@ -5,6 +5,35 @@ import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import '../../styles/About.css';
 import Particles from "../ui/Background";
+import LogoLoop from "../ui/TechStack";
+import { 
+    SiReact, 
+    SiNextdotjs, 
+    SiTypescript, 
+    SiTailwindcss, 
+    SiPython, 
+    SiGithub,
+    SiJavascript,
+    SiC,
+    SiArduino,
+    SiRaspberrypi, 
+} from 'react-icons/si';
+
+
+const techLogos = [
+  { node: <SiReact color="#09e9e5ff"/>, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs color="#17f117ff"/>, title: "Next.js", href: "https://nextjs.org",  },
+  { node: <SiTypescript color="#466cdcff"/>, title: "TypeScript", href: "https://www.typescriptlang.org",  },
+  { node: <SiTailwindcss color="#4ba2e8ff"/>, title: "Tailwind CSS", href: "https://tailwindcss.com",   },
+  { node: <SiPython color="#e0ee22ff"/>, title: "Python", href: "https://www.python.org/",   },
+  { node: <SiGithub color="#e7ebedff"/>, title: "Github", href: "https://github.com",   },
+  { node: <SiJavascript color="#c7ce06ff"/>, title: "JavaScript", href: "https://www.w3schools.com/Js/",   },
+  { node: <SiC color="#0ac866ff"/>, title: "C", href: "https://www.geeksforgeeks.org/c/c-programming-language/",   },
+  { node: <SiArduino color="#5eeadcff"/>, title: "Arduino", href: "https://www.arduino.cc/",   },
+  { node: <SiRaspberrypi color="#d40b73ff"/>, title: "Raspberry Pi", href: "https://www.raspberrypi.com/",   },
+];
+
+ 
 
 const Certifications = [
     {
@@ -250,6 +279,7 @@ const About: React.FC = () => {
                         <div className="container">
                             <h2 className="section-Title">Skills & Expertise</h2>
                             <div className="skills-Content">
+
                                 <div className="skills-Text">
                                     <h3>Technical Skills</h3>
                                     <p>I specialize in modern web technologies and have extensive experience with both fronted and backend development.
@@ -262,6 +292,7 @@ const About: React.FC = () => {
                                         className="skillSetIcon" 
                                     />
                                 </div>
+
                                 <div className="skills-List">
                                     {skills.map((skill, index) => (
                                         <div key={index} className="skill-Item fade-in-up">
@@ -278,6 +309,29 @@ const About: React.FC = () => {
                                         </div>
                                     ))}
                                 </div>
+
+                            </div>
+
+
+                             <div style={{ 
+                                height: '60px', 
+                                position: 'relative', 
+                                overflow: 'hidden',
+                                marginTop: 30,
+                                }}>
+                                {/* Basic horizontal loop */}
+                                <LogoLoop
+                                    logos={techLogos}
+                                    speed={60}
+                                    direction="left"
+                                    logoHeight={48}
+                                    gap={60}
+                                    hoverSpeed={0}
+                                    scaleOnHover
+                                    fadeOut
+                                    fadeOutColor="#000000ff"
+                                    ariaLabel="Technology partners"
+                                />
                             </div>
                         </div>
                     </div>

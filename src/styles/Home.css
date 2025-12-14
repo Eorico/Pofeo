@@ -66,24 +66,6 @@
   display: block;
 }
 
-.hero-Image::after {
-  content: '';
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  border-radius: 150px;
-  border: 3px solid #2fc6d6;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
-
-.hero-Image:hover::after {
-  opacity: 1;
-  transform: scale(1);
-}
-
 .hero-text {
   max-width: 800px;
   flex: 1;
