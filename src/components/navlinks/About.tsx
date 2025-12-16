@@ -19,7 +19,6 @@ import {
     SiRaspberrypi, 
 } from 'react-icons/si';
 
-
 const techLogos = [
   { node: <SiReact color="#09e9e5ff"/>, title: "React", href: "https://react.dev" },
   { node: <SiNextdotjs color="#17f117ff"/>, title: "Next.js", href: "https://nextjs.org",  },
@@ -200,27 +199,49 @@ const About: React.FC = () => {
                         <div className="container">
                             <h2 className="section-Title">What I Do</h2>
                             <div className="features-grid">
-                            <div className="feature-card fade-in-up">
-                                <div className="feature-icon">
-                                <div className="icon-circle"><Laptop size={30}/></div>
+
+                            <Link
+                                to='/project'
+                                state={{ category: 'Web Application' }}
+                                style={{ textDecoration: 'none' }}
+                            >        
+                                <div className="feature-card fade-in-up">
+                                    <div className="feature-icon">
+                                    <div className="icon-circle"><Laptop size={30}/></div>
+                                    </div>
+                                    <h3>Web Development</h3>
+                                    <p>Building responsive, modern websites using the latest technologies and best practices.</p>
                                 </div>
-                                <h3>Web Development</h3>
-                                <p>Building responsive, modern websites using the latest technologies and best practices.</p>
-                            </div>
-                            <div className="feature-card fade-in-up">
-                                <div className="feature-icon">
-                                <div className="icon-circle"><Paintbrush size={30}/></div>
+                            </Link>
+
+                            <Link
+                                to='/project'
+                                state={{ category: 'Python Game Development' }}
+                                style={{ textDecoration: 'none' }}
+                            >  
+                                <div className="feature-card fade-in-up">
+                                    <div className="feature-icon">
+                                    <div className="icon-circle"><Paintbrush size={30}/></div>
+                                    </div>
+                                    <h3>Backend Development</h3>
+                                    <p>Performative with it comes in problem solving and optimization in the backend logics.</p>
                                 </div>
-                                <h3>UI/UX Design</h3>
-                                <p>Creating intuitive and beautiful user interfaces that provide exceptional user experiences.</p>
-                            </div>
-                            <div className="feature-card fade-in-up">
-                                <div className="feature-icon">
-                                <div className="icon-circle"><Smartphone size={30}/></div>
+                            </Link>
+
+                            <Link
+                                to='/project'
+                                state={{ category: 'Mobile Application' }}
+                                style={{ textDecoration: 'none' }}
+                            >  
+                                <div className="feature-card fade-in-up">
+                                    <div className="feature-icon">
+                                    <div className="icon-circle"><Smartphone size={30}/></div>
+                                    </div>
+                                    <h3>Mobile Apps</h3>
+                                    <p>Developing cross-platform mobile applications that work seamlessly on all devices.</p>
                                 </div>
-                                <h3>Mobile Apps</h3>
-                                <p>Developing cross-platform mobile applications that work seamlessly on all devices.</p>
-                            </div>
+                            </Link>
+                            
                             </div>
                         </div>
                     </div>

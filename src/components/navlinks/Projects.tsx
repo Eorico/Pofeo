@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { ExternalLink, Github, X } from 'lucide-react';
 import '../../styles/Project.css';
 import Particles from '../ui/Background';
+import { useLocation } from 'react-router-dom';
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const location = useLocation();
+  const initialCategory = (location.state as any)?.category || 'All';
 
   const projects = [
     {
@@ -80,7 +83,7 @@ const Projects: React.FC = () => {
   ];
 
   const categories = ["All", "Web Application", "Python Game Development", "Mobile Application"];
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState(initialCategory);
 
   const filteredProjects = activeCategory === "All" 
     ? projects 
