@@ -350,7 +350,7 @@ const About: React.FC = () => {
                                     hoverSpeed={0}
                                     scaleOnHover
                                     fadeOut
-                                    fadeOutColor="#000000ff"
+                                    fadeOutColor="#1e1d1dcc"
                                     ariaLabel="Technology partners"
                                 />
                             </div>

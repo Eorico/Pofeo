@@ -79,7 +79,27 @@ const Projects: React.FC = () => {
       technologies: ["JavaScript", "React Native", "TypeScript", "Firebase"],
       liveUrl: "/assets/e-signie.apk",
       githubUrl: "https://github.com/Eorico/eSignie-App"
-    }
+    },
+    {
+      id: 8,
+      title: "?",
+      category: "",
+      image: "",
+      description: "ON PROCESS",
+      technologies: [],
+      liveUrl: "",
+      githubUrl: ""
+    },
+    {
+      id: 9,
+      title: "?",
+      category: "",
+      image: "",
+      description: "ON PROCESS",
+      technologies: [],
+      liveUrl: "",
+      githubUrl: ""
+    },
   ];
 
   const categories = ["All", "Web Application", "Python Game Development", "Mobile Application"];
