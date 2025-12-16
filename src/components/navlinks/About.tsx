@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Laptop, Paintbrush, Smartphone } from "lucide-react";
+import { Laptop, Brain, Smartphone } from "lucide-react";
 import { Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -221,7 +221,7 @@ const About: React.FC = () => {
                             >  
                                 <div className="feature-card fade-in-up">
                                     <div className="feature-icon">
-                                    <div className="icon-circle"><Paintbrush size={30}/></div>
+                                    <div className="icon-circle"><Brain size={30}/></div>
                                     </div>
                                     <h3>Backend Development</h3>
                                     <p>Performative with it comes in problem solving and optimization in the backend logics.</p>

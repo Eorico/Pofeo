@@ -1,3 +1,6 @@
+
+ 
+
 .about {
     padding-top: 0rem;
 }
@@ -425,6 +428,8 @@
 }
 
 .cta {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   padding: 6rem 0;
   background: linear-gradient(135deg, #526D82 0%, #27374D 100%);
   color: white;
