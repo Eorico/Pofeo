@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Laptop, Brain, Smartphone } from "lucide-react";
+import { Laptop, Brain, Smartphone, CupSoda } from "lucide-react";
 import { Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -16,7 +16,8 @@ import {
     SiJavascript,
     SiC,
     SiArduino,
-    SiRaspberrypi, 
+    SiRaspberrypi,
+    SiNodedotjs, 
 } from 'react-icons/si';
 
 const techLogos = [
@@ -37,7 +38,7 @@ const techLogos = [
 const Certifications = [
     {
         title: "Python Essential 1",
-        image: "/assets/PythonCert1.png"
+        image: "/assets/PythonCert1.png",
     },
     {
         title: "Python Essential 2",
@@ -65,16 +66,16 @@ const VISIBLECARDS = 5
 
 const About: React.FC = () => {
     const skills = [
-        { name: 'React', level: 60 },
-        { name: 'TypeScript', level: 80 },
-        { name: 'Node.js', level: 90 },
-        { name: 'Python', level: 80 },
-        { name: 'Java', level: 50 },
-        { name: 'Aruino', level: 50 },
-        { name: 'C++', level: 50 },
-        { name: 'RaspBerry Pi', level: 50 },
-        { name: 'Github', level: 100 },
-        { name: 'Mobile App - React Native/Android Studio', level: 80 },
+        { name: 'React', level: 60 , logo: <SiReact size={15} color="#07bbb8ff"/>},
+        { name: 'TypeScript', level: 80, logo: <SiTypescript size={15} color="#073dbbff"/> },
+        { name: 'Node.js', level: 90, logo: <SiNodedotjs size={15} color="#959f07ff"/> },
+        { name: 'Python', level: 80, logo: <SiPython size={15} color="#73bb07ff"/> },
+        { name: 'Java/Kotlin', level: 50, logo: <CupSoda size={15} color="#bb074fff"/> },
+        { name: 'Aruino', level: 50, logo: <SiArduino size={15} color="#0ac8d2ff"/> },
+        { name: 'C++', level: 50, logo: <SiC size={15} color="#4fbb07ff"/> },
+        { name: 'RaspBerry Pi', level: 50, logo: <SiRaspberrypi size={15} color="#b009a7ff"/> },
+        { name: 'Github', level: 100, logo: <SiGithub size={15} color="#050505ff"/> },
+        { name: 'Mobile App - React Native', level: 80, logo: <SiReact size={15} color="#073dbbff"/> },
     ];
 
     const [startIdx, setStartIdx] = useState(0);
@@ -318,7 +319,12 @@ const About: React.FC = () => {
                                     {skills.map((skill, index) => (
                                         <div key={index} className="skill-Item fade-in-up">
                                             <div className="skill-Header">
-                                                <span className="skill-Name">{skill.name}</span>
+                                                <span className="skill-Name">
+                                                    {skill.name}
+                                                    <span style={{ marginLeft: 10}}>
+                                                        {skill.logo}
+                                                    </span>
+                                                </span>
                                                 <span className="skill-Percent">{skill.level}%</span>
                                             </div>
                                             <div className="skill-Bar">
