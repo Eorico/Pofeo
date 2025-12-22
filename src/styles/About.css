@@ -3,6 +3,7 @@
 
 .about {
     padding-top: 0rem;
+    overflow-x: hidden;
 }
 
 .about-Self {
