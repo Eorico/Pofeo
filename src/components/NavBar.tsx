@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, User } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import '../styles/Nav.css';
 
 const Nav: React.FC = () => {
@@ -55,8 +55,11 @@ const Nav: React.FC = () => {
         <nav className={`navigation ${scrolled ? 'scrolled' : ''}`}>
             <div className="navContainer">
                 <Link to="/" className="navLogo" onClick={closeMenu}>
-                    <User size={33}/>
-                    <span>{'</Eorico>'}</span>
+                    <img 
+                        src="/assets/eoLogo.png"
+                        alt="Nav logo" 
+                    />
+                    <span>{'<Ico_Dev/>'}</span>
                 </Link>
                 <div className={`navMenu ${openMenu ? 'active' : ''}`}>
                     {navItem.map((item) => (

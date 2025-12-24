@@ -44,6 +44,10 @@
     color: #ffffff;
 }
 
+.navLogo img {
+  width: 50px;
+}
+
 .navMenu {
     display: flex;
     gap: 2rem;
