@@ -148,7 +148,7 @@ const About: React.FC = () => {
 
     return (
         <div className="about">
-            <section className="about-Self">
+            <section className="about-Self" id="About">
             <div className="paticles-container">
             <Particles
                 particleColors={['#ffffff', '#ffffff']}
