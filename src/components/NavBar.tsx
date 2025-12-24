@@ -56,7 +56,7 @@ const Nav: React.FC = () => {
             <div className="navContainer">
                 <Link to="/" className="navLogo" onClick={closeMenu}>
                     <User size={33}/>
-                    <span>ProF-Eo</span>
+                    <span>{'</Eorico>'}</span>
                 </Link>
                 <div className={`navMenu ${openMenu ? 'active' : ''}`}>
                     {navItem.map((item) => (

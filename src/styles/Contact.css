@@ -15,6 +15,7 @@
   color: white;
   text-align: center;
   position: relative;
+  margin-top: -20px;
 }
 
 .contact-header::before {
