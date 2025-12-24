@@ -407,6 +407,47 @@
     margin: 0 auto;
 }
 
+.timeline-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.timeline-youtube-video {
+  flex: 0 0 350px;
+}
+
+.timeline-row-video {
+  margin-top: 20px;
+}
+
+.timeline-row-video ,.timeline-youtube-video{
+  margin-bottom: 10px;
+}
+
+.timeline-youtube-video iframe{
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 10px 10px rgba(37, 39, 39, 0.761);
+}
+
+.timeline-raw-video video {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background: #191919;
+  border: 2px solid black;
+  box-shadow: 0 10px 10px rgba(37, 39, 39, 0.761);
+}
+
+.timeline-information {
+  flex: 1;
+  min-width: 350px;
+}
+
 .timeline::before {
     content: '';
     position: absolute;

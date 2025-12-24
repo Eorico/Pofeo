@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Laptop, Brain, Smartphone, CupSoda } from "lucide-react";
-import { Download } from "lucide-react";
+import { Laptop, Brain, Smartphone, CupSoda, ArrowRight } from "lucide-react";
+import { Download, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import '../../styles/About.css';
@@ -19,6 +19,9 @@ import {
     SiRaspberrypi,
     SiNodedotjs, 
 } from 'react-icons/si';
+
+import lineFollowing from '../../../public/video/lineFollowing.mp4';
+import showDownCar from '../../../public/video/showDownCar.mp4';
 
 const techLogos = [
   { node: <SiReact color="#09e9e5ff"/>, title: "React", href: "https://react.dev" },
@@ -363,7 +366,9 @@ const About: React.FC = () => {
                         <div className="container">
                             <h2 className="section-Title">Certifications</h2>
                             <div className="carousel multi-carousel">
-                                <button className="carousel-btn" onClick={PrevImg}>&lt;</button>
+                                <button className="carousel-btn" onClick={PrevImg}>
+                                    <ArrowLeft size={50}/>
+                                </button>
                                 <div className="carousel-Track">
                                     {Visible_Cards.map((cert, idx) => (
                                             <div className="carousel-card" key={idx}>
@@ -376,7 +381,9 @@ const About: React.FC = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <button className="carousel-btn" onClick={NextImg}>&gt;</button>
+                                <button className="carousel-btn" onClick={NextImg}>
+                                    <ArrowRight size={50}/>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -475,91 +482,316 @@ const About: React.FC = () => {
                         alphaParticles={false}
                         disableRotation={false}
                     />
+                    
                 <div className="journey-wrapper about-wrapper "> 
                         <div className="container">
                             <h2 className="section-Title">My Journey</h2>
                             <div className="timeline">
+                                
                                 <div className="timeline-Item fade-in-up">
+
                                     <div className="timeline-Marker"></div>
+
                                     <div className="timeline-Content">
-                                        <h3>Python - Structure Programming/OOP</h3>
-                                        <p className="timeline-Date">2023</p>
-                                        <p> - studied basic fundamentals and structure programming in python.</p>
-                                        <p> - studied object-oriented programming in python.</p>
-                                        <p> - learn to apply SOLID principles in python.</p>
+                                        <div className="timeline-row">
+
+                                            <div className="timeline-youtube-video">
+                                                <iframe 
+                                                    width="560" 
+                                                    height="315" 
+                                                    src="https://www.youtube.com/embed/jQzTnMyLUp4?si=W4xsFm2G5fks4FAB" 
+                                                    title="YouTube video player" 
+                                                    frameBorder="0" 
+                                                    allow="
+                                                        accelerometer; 
+                                                        autoplay; 
+                                                        clipboard-write; 
+                                                        encrypted-media; 
+                                                        gyroscope; 
+                                                        picture-in-picture; 
+                                                        web-share" 
+                                                        referrerPolicy="strict-origin-when-cross-origin" 
+                                                        allowFullScreen>
+                                                </iframe>
+                                            </div>
+
+                                            <div className="timeline-information">
+                                                <h3>Python - Structure Programming/OOP</h3>
+                                                <p className="timeline-Date">2023</p>
+                                                <p> - studied basic fundamentals and structure programming in python.</p>
+                                                <p> - studied object-oriented programming in python.</p>
+                                                <p> - learn to apply SOLID principles in python.</p>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
+
+                                    
+
                                 </div>
 
                                 <div className="timeline-Item fade-in-up">
+
                                     <div className="timeline-Marker"></div>
+
                                     <div className="timeline-Content">
-                                        <h3>HTM/CSS/JS</h3>
-                                        <p className="timeline-Date">2023</p>
-                                        <p> - learned the basics of web development using HTML, CSS, and JavaScript.</p>
-                                        <p> - created several small projects to practice my skills.</p>
-                                        <p> - focused on creating responsive, accessible user interface using modern frameworks and best practices in UI/UX design.</p>
-                                        <p> - learned to apply interactive elements using JavaScript.</p>
-                                        <p> - Also applied best practices in javascript.</p>
-                                    </div>
+
+                                        <div className="timeline-row">
+
+                                            <div className="timeline-information">
+                                                <h3>HTM/CSS/JS</h3>
+                                                <p className="timeline-Date">2024</p>
+                                                <p> - learned the basics of web development using HTML, CSS, and JavaScript.</p>
+                                                <p> - created several small projects to practice my skills.</p>
+                                                <p> - focused on creating responsive, accessible user interface using modern frameworks and best practices in UI/UX design.</p>
+                                                <p> - learned to apply interactive elements using JavaScript.</p>
+                                                <p> - Also applied best practices in javascript.</p>
+                                            </div>
+
+                                            <div className="timeline-youtube-video">
+                                                <iframe 
+                                                    width="560" 
+                                                    height="315" 
+                                                    src="https://www.youtube.com/embed/hEB0kfg22yc?si=9eYX0dysZw2UR0PL" 
+                                                    title="YouTube video player" 
+                                                    frameBorder="0" 
+                                                    allow="
+                                                        accelerometer; 
+                                                        autoplay; 
+                                                        clipboard-write; 
+                                                        encrypted-media; 
+                                                        gyroscope; 
+                                                        picture-in-picture; 
+                                                        web-share" 
+                                                        referrerPolicy="strict-origin-when-cross-origin" 
+                                                        allowFullScreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+
                                 </div>
 
                                 <div className="timeline-Item fade-in-up">
+
                                     <div className="timeline-Marker"></div>
+                                    
                                     <div className="timeline-Content">
-                                        <h3>Full Stack Developer - Django</h3>
-                                        <p className="timeline-Date">2024</p>
-                                        <p> - studied the fundamentals of Django and its MVC architecture.</p>
-                                        <p> - learned to build RESTful APIs using Django REST Framework.</p>
-                                        <p> - created full-stack applications using Django, HTML, CSS, and JavaScript.</p>
-                                        <p> - focuses in authentication and security.</p>
-                                        <p> - learned to use github repositories and version control.</p>
+                                        <div className="timeline-row">
+
+                                            <div className="timeline-youtube-video">
+                                                <iframe 
+                                                    width="560" 
+                                                    height="315" 
+                                                    src="https://www.youtube.com/embed/hEB0kfg22yc?si=9eYX0dysZw2UR0PL" 
+                                                    title="YouTube video player" 
+                                                    frameBorder="0" 
+                                                    allow="
+                                                        accelerometer; 
+                                                        autoplay; 
+                                                        clipboard-write; 
+                                                        encrypted-media; 
+                                                        gyroscope; 
+                                                        picture-in-picture; 
+                                                        web-share" 
+                                                        referrerPolicy="strict-origin-when-cross-origin" 
+                                                        allowFullScreen>
+                                                </iframe>
+                                            </div>
+
+                                            <div className="timeline-information"> 
+                                                <h3>Full Stack Developer - Django</h3>
+                                                <p className="timeline-Date">2024</p>
+                                                <p> - studied the fundamentals of Django and its MVC architecture.</p>
+                                                <p> - learned to build RESTful APIs using Django REST Framework.</p>
+                                                <p> - created full-stack applications using Django, HTML, CSS, and JavaScript.</p>
+                                                <p> - focuses in authentication and security.</p>
+                                                <p> - learned to use github repositories and version control.</p>
+                                            </div>
+                                        </div>
+
                                     </div>
+                                    
                                 </div>
 
                                 <div className="timeline-Item fade-in-up">
+
                                     <div className="timeline-Marker"></div>
+
                                     <div className="timeline-Content">
-                                        <h3>Frameworks - React and React Native</h3>
-                                        <p className="timeline-Date">2024 - present</p>
-                                        <p> - learned the fundamentals of React and React Native.</p>
-                                        <p> - created responsive web and mobile applications using React and React Native.</p>
-                                        <p> - focused on building reusable components and managing state with Redux.</p>
-                                        <p> - learned to integrate third-party APIs and services.</p>
-                                        <p> - created my first "Full stack Web Application" using node.js and express.js</p>
-                                        <p> - manage to learn how to have communication between frontend and backend. By the use of axios.</p>
+
+                                        <div className="timeline-row">
+
+                                            <div className="timeline-information">
+                                                <h3>Frameworks - React and React Native</h3>
+                                                <p className="timeline-Date">2024 - present</p>
+                                                <p> - learned the fundamentals of React and React Native.</p>
+                                                <p> - created responsive web and mobile applications using React and React Native.</p>
+                                                <p> - focused on building reusable components and managing state with Redux.</p>
+                                                <p> - learned to integrate third-party APIs and services.</p>
+                                                <p> - created my first "Full stack Web Application" using node.js and express.js</p>
+                                                <p> - manage to learn how to have communication between frontend and backend. By the use of axios.</p>
+                                            </div>
+                                            
+                                            <div className="timeline-row-video">
+                                                <div className="timeline-youtube-video">
+                                                    <iframe 
+                                                        width="560" 
+                                                        height="315" 
+                                                        src="https://www.youtube.com/embed/HElQdwV7Cd0?si=AojelmGPYcw5PkP1" 
+                                                        title="YouTube video player" 
+                                                        frameBorder="0" 
+                                                        allow="
+                                                            accelerometer; 
+                                                            autoplay; 
+                                                            clipboard-write; 
+                                                            encrypted-media; 
+                                                            gyroscope; 
+                                                            picture-in-picture; 
+                                                            web-share" 
+                                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                                            allowFullScreen>
+                                                    </iframe>
+                                                </div>
+
+                                                <div className="timeline-youtube-video">
+                                                    <iframe 
+                                                        width="560" 
+                                                        height="315" 
+                                                        src="https://www.youtube.com/embed/SGJhRMDhMNY?si=ty5dTdcn8YE9xJe7" 
+                                                        title="YouTube video player" 
+                                                        frameBorder="0" 
+                                                        allow="
+                                                            accelerometer; 
+                                                            autoplay; 
+                                                            clipboard-write; 
+                                                            encrypted-media; 
+                                                            gyroscope; 
+                                                            picture-in-picture; 
+                                                            web-share" 
+                                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                                            allowFullScreen>
+                                                    </iframe>
+                                                </div>
+                                                
+                                            </div>
+
+                                        </div>
                                     </div>
+                                    
                                 </div>
 
                                 <div className="timeline-Item fade-in-up">
+
                                     <div className="timeline-Marker"></div>
+
                                     <div className="timeline-Content">
-                                        <h3>Mobile Developer - React Native and Android Studio/Kotlin</h3>
-                                        <p className="timeline-Date">2024 - present</p>
-                                        <p> - study the workflow and analyze best conceptual frameworks approaches</p>
-                                        <p> - learned to build cross-platform mobile applications using React Native.</p>
-                                        <p> - also learned to build native android applications using Android Studio and Kotlin.</p>
-                                        <p> - focuses on performance optimization and user experience.</p>
-                                        <p> - also learned to deploy and convert to apk/abb.</p>
-                                        <p> - learned to deploy mobile applications to the App Store and Google Play Store.</p>
+
+                                        <div className="timeline-row">
+                                            
+                                            <div className="timeline-row-video">
+                                                <div className="timeline-youtube-video">
+                                                    <iframe 
+                                                        width="560" 
+                                                        height="315" 
+                                                        src="https://www.youtube.com/embed/3MxME6lLwSU?si=-b65CcRlZGK1fjc8" 
+                                                        title="YouTube video player" 
+                                                        frameBorder="0" 
+                                                        allow="
+                                                            accelerometer; 
+                                                            autoplay; 
+                                                            clipboard-write; 
+                                                            encrypted-media; 
+                                                            gyroscope; 
+                                                            picture-in-picture; 
+                                                            web-share" 
+                                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                                            allowFullScreen>
+                                                    </iframe>
+                                                </div>
+
+                                                <div className="timeline-youtube-video">
+                                                    <iframe 
+                                                        width="560" 
+                                                        height="315" 
+                                                        src="https://www.youtube.com/embed/RZfNG1SPrmk?si=QY7Nr9XWacS0zMmT" 
+                                                        title="YouTube video player" 
+                                                        frameBorder="0" 
+                                                        allow="
+                                                            accelerometer; 
+                                                            autoplay; 
+                                                            clipboard-write; 
+                                                            encrypted-media; 
+                                                            gyroscope; 
+                                                            picture-in-picture; 
+                                                            web-share" 
+                                                            referrerPolicy="strict-origin-when-cross-origin" 
+                                                            allowFullScreen>
+                                                    </iframe>
+                                                </div>
+
+                                            </div>
+
+                                            <div className="timeline-information">
+                                                <h3>Mobile Developer - React Native and Android Studio/Kotlin</h3>
+                                                <p className="timeline-Date">2024 - present</p>
+                                                <p> - study the workflow and analyze best conceptual frameworks approaches</p>
+                                                <p> - learned to build cross-platform mobile applications using React Native.</p>
+                                                <p> - also learned to build native android applications using Android Studio and Kotlin.</p>
+                                                <p> - focuses on performance optimization and user experience.</p>
+                                                <p> - also learned to deploy and convert to apk/abb.</p>
+                                                <p> - learned to deploy mobile applications to the App Store and Google Play Store.</p>
+                                            </div>
+                                        </div>
+
                                     </div>
+
                                 </div>
 
                                 <div className="timeline-Item fade-in-up">
+
                                     <div className="timeline-Marker"></div>
+
                                     <div className="timeline-Content">
-                                        <h3>Arduino and Raspberry Pi</h3>
-                                        <p className="timeline-Date">2025 - present</p>
-                                        <p> - studied the fundamentals of Arduino and Raspberry Pi.</p>
-                                        <p> - learned the basics of c++ and python embedded programming.</p>
-                                        <p> - learned to build simple IoT projects using Arduino.</p>
-                                        <p> 
-                                            - currently undergoing on a research project for integration of IOT devices by the help of raspberry pi for machine learning.
-                                            <br /> - focuses on automation and smart systems.
-                                            <br /> - learning to integrate sensors and actuators with microcontrollers.
-                                            <br /> - focuses on data collection and analysis.
-                                            <br /> - focuses on contributing to aquaculture technology through automation and smart systems.
-                                        </p>
+
+                                        <div className="timeline-row">
+
+                                            <div className="timeline-information">
+                                                <h3>Arduino and Raspberry Pi</h3>
+                                                <p className="timeline-Date">2025 - present</p>
+                                                <p> - studied the fundamentals of Arduino and Raspberry Pi.</p>
+                                                <p> - learned the basics of c++ and python embedded programming.</p>
+                                                <p> - learned to build simple IoT projects using Arduino.</p>
+                                                <p> 
+                                                    - currently undergoing on a research project for integration of IOT devices by the help of raspberry pi for machine learning.
+                                                    <br /> - focuses on automation and smart systems.
+                                                    <br /> - learning to integrate sensors and actuators with microcontrollers.
+                                                    <br /> - focuses on data collection and analysis.
+                                                    <br /> - focuses on contributing to aquaculture technology through automation and smart systems.
+                                                </p>
+                                            </div>
+
+                                            <div className="timeline-row-view">
+                                                
+                                                <div className="timeline-raw-video">
+                                                    <video controls preload="metadata">
+                                                        <source src={lineFollowing} type="video/mp4"/>
+                                                    </video>
+                                                </div>
+
+                                                <div className="timeline-raw-video">
+                                                    <video controls preload="metadata">
+                                                        <source src={showDownCar} type="video/mp4"/>
+                                                    </video>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
                                     </div>
+
                                 </div>
 
                             </div>
