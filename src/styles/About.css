@@ -90,6 +90,58 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+.educational-background {
+  padding: 100px 0;
+  position: relative;
+  background: #191919;
+}
+
+.educational-background-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.educational-text {
+  text-align: center;
+}
+
+.education-school-image img{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #3cfcf6c2;
+  object-fit: cover;
+   transition: all 0.3s ease;
+}
+
+.education-school-image img:hover {
+  transform: translateY(-10px);
+}
+
+.educational-information h3 {
+  font-size: 40px;
+  color: #ebe6e5;
+}
+
+.educational-information p {
+  color: #e5e7eb;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.educational-information h3 {
+  color: #3cfcf6c2;
+}
+
+.education-course {
+  font-size: 25px;
+  color: #e5e7eb;
+
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

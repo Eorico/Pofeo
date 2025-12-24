@@ -184,6 +184,104 @@ const About: React.FC = () => {
             </div>
             </section>
 
+            <section className="educational-background">
+                <div className="paticles-container">
+                <Particles
+                    particleColors={['#ffffff', '#ffffff']}
+                    particleCount={200}
+                    particleSpread={10}
+                    speed={0.1}
+                    particleBaseSize={100}
+                    moveParticlesOnHover={true}
+                    alphaParticles={false}
+                    disableRotation={false}
+                />
+                    <div className="educational-background-wrapper about-wrapper">
+
+                        <div className="educational-background-container container">
+                            <div className="educational-text about-Text">
+                                <h1>Educational Background</h1>
+                            </div>
+
+                            <div className="educational-background-content">
+                
+                                <div className="education-school-image">
+                                    <a href="https://tup.edu.ph/">
+                                        <img 
+                                            src="/assets/TUPCAVITE.jpg" 
+                                            alt="Technological University of the Philippines" 
+                                        />
+                                    </a>
+                                </div>
+
+                                <div className="educational-information">
+                                    
+                                    <h3>Technological University of the Philippines - Cavite Campuse</h3>
+        
+                                    <p>
+                                        I am currently a <strong>college student</strong> at the
+                                        Technological University of the Philippines - Cavite Campus.
+                                        My academic journey focuses on building strong foundation in programming, 
+                                        software development, and teaching.
+                                    </p>
+
+                                    <p>
+                                        Through hands on projects, research activities, and practical coursework,
+                                        I continuously enhance my problem-solving skills and technical experties, 
+                                        preparing myself for real-world applications in software and also in teaching.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div className="educational-background-content">
+
+                                <div className="educational-information">
+                                    <h3>About My Course</h3>
+                                    <p className="education-course">
+                                        Bachelor of Technical Vocation Teacher Education 
+                                        <br />
+                                        Major in <strong>Computer Programming</strong>
+                                    </p>
+
+                                    <p>
+                                         I am currently pursuing a Bachelor of Technical Vocation Teacher Education
+                                         with a major in Computer Programming. This program uniquely combines in depth
+                                         of technical training in software development with professional education subjects
+                                         that prepare us or students to become effective technology educators.
+                                    </p>
+
+                                    <p>
+                                        Throughtout my journey in this course, I have developed a strong foundation in programming
+                                        concepts, including structured programming, object-oriented programming, web development, mobile
+                                        development, and device programming. Alongside technical skills, I am also trained in teaching methodologies,
+                                        classroom management, and instructional planning, allowing me to effectively communicate complex technical concepts
+                                        in a clear and engaging manner.
+                                    </p>
+
+                                    <p>
+                                        I continuously apply theoretical knowledge to real world scenario
+                                        . This experience has strengthened my analytical thinking, adaptability, and technical
+                                        experties, preparing me not only for careers in software development but also for roles
+                                        in technical instructors, mentorship, and educational innovation.
+                                    </p>
+
+                                </div>
+
+                                <div className="education-course-image education-school-image">
+                                    <img 
+                                        src="/assets/aboutmycourse.jpg" 
+                                        alt="Technological University of the Philippines" 
+                                    />
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section className="features">  
                 <div className="paticles-container">
                 <Particles
