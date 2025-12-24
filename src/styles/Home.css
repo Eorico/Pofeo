@@ -60,9 +60,7 @@
 .hero-Image img {
   width: 700px;
   height: 700px;
-  border-radius: 150px;
   object-fit: cover;
-  box-shadow: 0 10px 30px rgba(127, 126, 126, 0.775);
   transition: all 0.3 ease;
   display: block;
 }
