@@ -65,6 +65,15 @@ const Certifications = [
     },
 ];
 
+const timelineFigures = [
+    {figure: '/assets/pythonJourney.png'},
+    {figure: '/assets/WebDev1.png'},
+    {figure: '/assets/WebDev2.png'},
+    {figure: '/assets/React.png'},
+    {figure: '/assets/MobileDev.png'},
+    {figure: '/assets/Robotics.png'},
+]
+
 const VISIBLECARDS = 5
 
 const About: React.FC = () => {
@@ -490,7 +499,9 @@ const About: React.FC = () => {
                                 
                                 <div className="timeline-Item fade-in-up">
 
-                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-logo-figure">
+                                        <img src={timelineFigures[0].figure} alt="timeline figure" className="timeline-figure" />
+                                    </div>
 
                                     <div className="timeline-Content">
                                         <div className="timeline-row">
@@ -526,13 +537,15 @@ const About: React.FC = () => {
                                         
                                     </div>
 
-                                    
-
                                 </div>
+
+                                
 
                                 <div className="timeline-Item fade-in-up">
 
-                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-logo-figure">
+                                        <img src={timelineFigures[1].figure} alt="timeline figure" className="timeline-figure" style={{ marginLeft: -250 }} />
+                                    </div>
 
                                     <div className="timeline-Content">
 
@@ -575,7 +588,9 @@ const About: React.FC = () => {
 
                                 <div className="timeline-Item fade-in-up">
 
-                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-logo-figure">
+                                        <img src={timelineFigures[2].figure} alt="timeline figure" className="timeline-figure" />
+                                    </div>
                                     
                                     <div className="timeline-Content">
                                         <div className="timeline-row">
@@ -617,7 +632,9 @@ const About: React.FC = () => {
 
                                 <div className="timeline-Item fade-in-up">
 
-                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-logo-figure">
+                                        <img src={timelineFigures[3].figure} alt="timeline figure" className="timeline-figure" style={{ marginLeft: -250 }} />
+                                    </div>
 
                                     <div className="timeline-Content">
 
@@ -684,7 +701,9 @@ const About: React.FC = () => {
 
                                 <div className="timeline-Item fade-in-up">
 
-                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-logo-figure">
+                                        <img src={timelineFigures[4].figure} alt="timeline figure" className="timeline-figure" />
+                                    </div>
 
                                     <div className="timeline-Content">
 
@@ -751,7 +770,9 @@ const About: React.FC = () => {
 
                                 <div className="timeline-Item fade-in-up">
 
-                                    <div className="timeline-Marker"></div>
+                                    <div className="timeline-logo-figure">
+                                        <img src={timelineFigures[5].figure} alt="timeline figure" className="timeline-figure" style={{ marginLeft: -250 }}/>
+                                    </div>
 
                                     <div className="timeline-Content">
 
@@ -824,46 +845,46 @@ const About: React.FC = () => {
              {
             showModal && (
                 <div className="Request-Form-Modal">
-                <div className="Request-Form">
-                    <button className="RSQClose-Modal" onClick={CloseModal}>x</button>
-                    {!submitted ? (
-                    <>
-                        <h3>Request Resume/CV</h3>
-                        <form onSubmit={DownloadResume} className="RSQ-Form">
-                        <input 
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        value={form.name}
-                        onChange={ChangeHandler}
-                        required 
-                        />
-                        <input 
-                        type="text"
-                        name="email"
-                        placeholder="Your Email"
-                        value={form.email}
-                        onChange={ChangeHandler}
-                        required 
-                        />
-                        <textarea 
-                        name="msg" 
-                        placeholder="Reason for requesting Resume/CV"
-                        value={form.msg}
-                        onChange={ChangeHandler}
-                        required
-                        />
-                        <button type="submit" className="btn RSQ-btn" >Send Request</button>
-                    </form>
-                    </>
-                    ) : (
-                    <div>
-                        <h4>Request Sent!</h4>
-                        <p>Thank you for your interest. Your request is under review, please wait for approval of the owner</p>
-                        <button className="btn RSQClose-btn" onClick={CloseModal}>Close</button>
+                    <div className="Request-Form">
+                        <button className="RSQClose-Modal" onClick={CloseModal}>x</button>
+                        {!submitted ? (
+                        <>
+                            <h3>Request Resume/CV</h3>
+                            <form onSubmit={DownloadResume} className="RSQ-Form">
+                            <input 
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            value={form.name}
+                            onChange={ChangeHandler}
+                            required 
+                            />
+                            <input 
+                            type="text"
+                            name="email"
+                            placeholder="Your Email"
+                            value={form.email}
+                            onChange={ChangeHandler}
+                            required 
+                            />
+                            <textarea 
+                            name="msg" 
+                            placeholder="Reason for requesting Resume/CV"
+                            value={form.msg}
+                            onChange={ChangeHandler}
+                            required
+                            />
+                            <button type="submit" className="btn RSQ-btn" >Send Request</button>
+                        </form>
+                        </>
+                        ) : (
+                        <div>
+                            <h4>Request Sent!</h4>
+                            <p>Thank you for your interest. Your request is under review, please wait for approval of the owner</p>
+                            <button className="btn RSQClose-btn" onClick={CloseModal}>Close</button>
+                        </div>
+                        )}
                     </div>
-                    )}
-                </div>
                 </div>
             )}
         </div>
