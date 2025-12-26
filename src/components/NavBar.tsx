@@ -54,7 +54,7 @@ const Nav: React.FC = () => {
     return (
         <nav className={`navigation ${scrolled ? 'scrolled' : ''}`}>
             <div className="navContainer">
-                <Link to="/" className="navLogo" onClick={closeMenu}>
+                <Link to="/" className={`navLogo ${scrolled ? 'scrolledLogo' : ''}`} onClick={closeMenu}>
                     <img 
                         src="/assets/eoLogo.png"
                         alt="Nav logo" 

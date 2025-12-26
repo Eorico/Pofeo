@@ -12,11 +12,30 @@
     transition: all 0.3s ease;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    transition: all 0.2s ease;
 }
 
 .navigation.scrolled {
+    width: 570px;
+    left: 670px;
+    margin-top: 10px;
+    border-radius: 50px;
     background: rgba(39, 56, 75, 0.904);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navLogo.scrolledLogo img,
+.navLogo.scrolledLogo span {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transform: all 0.3s ease;
+}
+
+.navigation.scrolled .navMenu {
+  justify-content: flex-end;
+  transition: all 0.3s ease;
 }
 
 .navContainer {
