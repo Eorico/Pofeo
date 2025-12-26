@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Facebook, Instagram, Mail, Phone, MapPin} from 'lucide-react';
+import { Link } from 'react-router-dom';
 import '../../styles/Footer.css'; 
 
 const Footer: React.FC = () => {
@@ -34,20 +35,20 @@ const Footer: React.FC = () => {
             <div className="footer-section">
               <h3 className="footer-title">Quick Links</h3>
               <ul className="footer-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/project">Project</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/project">Project</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
 
             <div className="footer-section">
               <h3 className="footer-title">Services</h3>
               <ul className="footer-links">
-                <li><a href="/contact">Web Development</a></li>
-                <li><a href="/contact">Back-end Development</a></li>
-                <li><a href="/contact">Front-end Development</a></li>
-                <li><a href="/contact">Consulting</a></li>
+                <li><Link to="/contact">Web Development</Link></li>
+                <li><Link to="/contact">Back-end Development</Link></li>
+                <li><Link to="/contact">Front-end Development</Link></li>
+                <li><Link to="/contact">Consulting</Link></li>
               </ul>
             </div>
 
@@ -85,8 +86,8 @@ const Footer: React.FC = () => {
               by Eorico Gonzales
             </p>
             <div className="footer-bottom-links">
-              <a href="/">Privacy Policy</a>
-              <a href="/">Terms of Service</a>
+              <Link to="/">Privacy Policy</Link>
+              <Link to="/">Terms of Service</Link>
             </div>
           </div>
         </div>
