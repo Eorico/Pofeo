@@ -45,7 +45,7 @@ const Nav: React.FC = () => {
     };
 
     const navItem = [
-        { path: '/#Home', label: 'Home' },
+        { path: '/', label: 'Home' },
         { path: '/about', label: 'About Me' },
         { path: '/project', label: 'Projects' },
         { path: '/contact', label: 'Contact' }

@@ -123,7 +123,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="project">
-      <section className="project-header" id='Project'>
+      <section className="project-header">
         <div className="container">
           <h1 className="fade-in-up">My Work</h1>
           <p className="project-lead fade-in-up">

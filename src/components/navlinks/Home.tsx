@@ -7,7 +7,7 @@ import '../../styles/Home.css';
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <section className="hero" id="Home">
+      <section className="hero">
         <div className="hero-container">
           <div className="hero-content">
             <div className="hero-text fade-in-up">

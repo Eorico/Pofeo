@@ -6,6 +6,9 @@ import About from "./components/navlinks/About";
 import Project from "./components/navlinks/Projects";
 import Contact from "./components/navlinks/Contact";
 import Footer from "./components/navlinks/Footer";
+
+import ScrollUp from "./components/ui/Scroll.Up";
+
 import './App.css';
 
 export default function App() {
@@ -58,6 +61,7 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollUp />
       <div className="app">
         <Nav/>
         <main className="mainContent">

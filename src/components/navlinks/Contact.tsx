@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
 
     return (
     <div className="contact">
-      <section className="contact-header" id='Contact'>
+      <section className="contact-header" >
         <div className="container">
           <h1 className="fade-in-up">Get In Touch</h1>
           <p className="contact-lead fade-in-up">
