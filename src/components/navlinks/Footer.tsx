@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
               <ul className="footer-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/project">Project</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
             </div>
@@ -44,10 +44,10 @@ const Footer: React.FC = () => {
             <div className="footer-section">
               <h3 className="footer-title">Services</h3>
               <ul className="footer-links">
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">Back-end Development</a></li>
-                <li><a href="#">Front-end Development</a></li>
-                <li><a href="#">Consulting</a></li>
+                <li><a href="/contact">Web Development</a></li>
+                <li><a href="/contact">Back-end Development</a></li>
+                <li><a href="/contact">Front-end Development</a></li>
+                <li><a href="/contact">Consulting</a></li>
               </ul>
             </div>
 
@@ -85,8 +85,8 @@ const Footer: React.FC = () => {
               by Eorico Gonzales
             </p>
             <div className="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
+              <a href="/">Privacy Policy</a>
+              <a href="/">Terms of Service</a>
             </div>
           </div>
         </div>
