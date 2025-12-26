@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Github, Mail } from "lucide-react";
-import { FaFacebook } from "react-icons/fa";
+import { ArrowRight } from "lucide-react";
 import '../../styles/Home.css';
 
 const Home: React.FC = () => {

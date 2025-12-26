@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Twitter } from 'lucide-react';
-import { FaFacebook } from "react-icons/fa";
+import { Mail, Phone, MapPin, Send} from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import '../../styles/Contact.css';
 import Particles from '../ui/Background';
