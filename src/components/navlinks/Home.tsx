@@ -50,17 +50,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <div className="social-links">
-        <a href="https://github.com/Eorico" className="social-link">
-          <Github size={24} />
-        </a>
-        <a href="https://www.facebook.com/ej.gonzales.37" className="social-link">
-          <FaFacebook size={24} />
-        </a>
-        <a href="mailto:eoricogonzales@gmail.com" className="social-link">
-          <Mail size={24} />
-        </a>
-      </div>
     </div>
   );
 };

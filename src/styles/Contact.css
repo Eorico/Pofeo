@@ -127,6 +127,7 @@
 .social-links {
   display: flex;
   gap: 1rem;
+  z-index: 1000;
 }
 
 .social-link {
