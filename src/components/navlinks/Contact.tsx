@@ -198,6 +198,9 @@ const Contact: React.FC = () => {
       </section>
 
       <section className="contact-map">
+        <div>
+          <h2 className='section-Title'>ADDRESS LOCATION</h2>
+        </div>
         <div className="paticles-container">
           <Particles
               particleColors={['#ffffff', '#ffffff']}
