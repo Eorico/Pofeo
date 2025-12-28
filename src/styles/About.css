@@ -285,8 +285,8 @@
 
 .skills {
   position: relative;
-    padding: 3rem;
-    background: #191919;
+  padding: 3rem;
+  background: #191919;
 }
 
 .skills-Content {
@@ -383,6 +383,10 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+}
+
+.technology-and-tools {
+  margin-top: 20px;
 }
 
 @keyframes slide {

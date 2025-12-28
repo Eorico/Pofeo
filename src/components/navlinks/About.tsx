@@ -18,6 +18,10 @@ import {
     SiArduino,
     SiRaspberrypi,
     SiNodedotjs, 
+    SiGmail,
+    SiBootstrap,
+    SiFigma,
+    SiCanva
 } from 'react-icons/si';
 
 import lineFollowing from '../../../public/video/lineFollowing.mp4';
@@ -34,6 +38,10 @@ const techLogos = [
   { node: <SiC color="#0ac866ff"/>, title: "C", href: "https://www.geeksforgeeks.org/c/c-programming-language/",   },
   { node: <SiArduino color="#5eeadcff"/>, title: "Arduino", href: "https://www.arduino.cc/",   },
   { node: <SiRaspberrypi color="#d40b73ff"/>, title: "Raspberry Pi", href: "https://www.raspberrypi.com/",   },
+  { node: <SiGmail color="#c9cad3ff"/>, title: "Raspberry Pi", href: "https://www.gmail.com/", },
+  { node: <SiBootstrap color="#0b29d4ff"/>, title: "Raspberry Pi", href: "https://www.bootstrap.com/", },
+  { node: <SiFigma color="#940b4fff"/>, title: "Raspberry Pi", href: "https://www.figma.com/", },
+  { node: <SiCanva color="#0b94d4ff"/>, title: "Raspberry Pi", href: "https://www.canva.com/", },
 ];
 
  
@@ -453,7 +461,17 @@ const About: React.FC = () => {
 
                             </div>
 
-
+                            <div
+                                className="technology-and-tools"
+                            >
+                                <h2 
+                                    className="section-Title"
+                                    style={{ fontSize: 60 }}
+                                >
+                                    TECHNOLOGY AND TOOLS
+                                </h2>
+                            </div>
+                            
                              <div style={{ 
                                 height: '60px', 
                                 position: 'relative', 
@@ -461,6 +479,8 @@ const About: React.FC = () => {
                                 marginTop: 30,
                                 }}>
                                 {/* Basic horizontal loop */}
+ 
+
                                 <LogoLoop
                                     logos={techLogos}
                                     speed={60}

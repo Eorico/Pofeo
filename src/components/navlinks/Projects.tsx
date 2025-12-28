@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: "Portfolio Website",
+      title: "BASIC WEBSITE",
       category: "Web Application",
       image: "/assets/PortFolio1.0.gif",
       description: "A modern, responsive portfolio website with smooth animations and interactive elements. Built with performance and accessibility in mind.",
