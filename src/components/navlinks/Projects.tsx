@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: "Financial Tracker Application",
+      title: "Financial Tracker Website",
       category: "Web Application",
       image: "/assets/FinanceWeb.gif",
       description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: "BASIC WEBSITE",
+      title: "HTML, CSS, JS",
       category: "Web Application",
       image: "/assets/PortFolio1.0.gif",
       description: "A modern, responsive portfolio website with smooth animations and interactive elements. Built with performance and accessibility in mind.",
