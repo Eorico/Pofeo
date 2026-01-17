@@ -21,7 +21,7 @@ import {
     SiGmail,
     SiBootstrap,
     SiFigma,
-    SiCanva
+    SiCanva,
 } from 'react-icons/si';
 
 import lineFollowing from '../../../public/video/lineFollowing.mp4';
