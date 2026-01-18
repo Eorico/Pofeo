@@ -5,19 +5,29 @@ import Particles from '../ui/Background';
 import { useLocation } from 'react-router-dom';
 import { projects } from '../ui/Project.Links';
 
+import GLBViewer from '../ui/GLB.Model.Viewer';
+
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const location = useLocation();
   const initialCategory = (location.state as any)?.category || 'All';
 
-  const categories = ["All", "Web Application", "Python Game Development", "Mobile Application"];
+  const categories = ["All", "Web Application", "Python Game Development", "Mobile Application", "Device Programming"];
   const [activeCategory, setActiveCategory] = useState(initialCategory);
 
-  const [mainImg, setMainImg] = useState<string>("")
+  const [mainImg, setMainImg] = useState<string>("");
+
+  const isGLB = (src?: string) => src?.endsWith(".glb");
 
   useEffect(() => {
-    if (selectedProjectData?.image) {
+    if (!selectedProjectData) return;
+
+    if (selectedProjectData.model) {
+      setMainImg(selectedProjectData.model);
+    } else if (selectedProjectData.image) {
       setMainImg(selectedProjectData.image);
+    } else {
+      setMainImg("");
     }
   }, [selectedProject]);
 
@@ -87,7 +97,9 @@ const Projects: React.FC = () => {
                     onClick={() => openModal(project.id)}
                   >
                     <div className="project-image">
-                      <img src={project.image} alt={project.title} />
+                      {project.image && (
+                        <img src={project.image} alt={project.title} />
+                      )}
                       <div className="project-overlay">
                         <div className="project-actions">
                           <button className="action-btn">
@@ -137,8 +149,14 @@ const Projects: React.FC = () => {
             <div className="modal-left">
               <div className="modal-main-image-container">
                 <div className="main-image-wrapper">
-                  {mainImg && (
-                    <img src={mainImg} alt={selectedProjectData?.title || "Project Image"} />
+                  {mainImg && ( 
+                    isGLB(mainImg) ? (
+                      <div className='model-container image-viewer'>
+                        <GLBViewer src={mainImg}/>
+                      </div>
+                    ) : (
+                      <img className='image-viewer' src={mainImg} alt={selectedProjectData?.title} />
+                    )
                   )}
                 </div>
               </div>

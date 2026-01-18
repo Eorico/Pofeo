@@ -170,16 +170,19 @@ export const projects = [
     },
     {
       id: 8,
-      title: "?",
+      title: "Device Programming",
       category: "",
-      image: "",
-      description: "ON PROCESS",
-      technologies: [],
-      liveUrl: "",
-      githubUrl: "",
-      thumbnails : [
-        
-      ]
+      image: "assets/FISHBOT.png",
+      model: "/assets/FishRobot.glb",
+      description: "A line following robot built using arduino and variouse electronic components.",
+      technologies: [
+        // "C++", "Arduino", "Electronics", "Iot"
+        { name: "C++", icon: Code },
+        { name: "Arduino", icon: Cog },
+        { name: "Electronics", icon: MdOutlineWaves },
+        { name: "IoT", icon: MdOutlineWaves },
+      ],
+      
     },
     {
       id: 9,
