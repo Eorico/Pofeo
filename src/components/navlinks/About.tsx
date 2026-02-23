@@ -45,6 +45,8 @@ import EoricoImage from '../../../public/assets/ProfPic.png';
 import tupImage from '../../../public/assets/TUPCAVITE.jpg';
 import brosImage from '../../../public/assets/aboutmycourse.jpg';
 
+import skillset from '../../../public/assets/skillsSet.png';
+
 const techLogos = [
   { node: <SiReact color="#09e9e5ff"/>, title: "React", href: "https://react.dev" },
   { node: <SiNextdotjs color="#17f117ff"/>, title: "Next.js", href: "https://nextjs.org",  },
@@ -429,7 +431,7 @@ const About: React.FC = () => {
                                     </p>
 
                                     <img 
-                                        src="/assets/skillsSet.png" 
+                                        src={skillset} 
                                         alt="skillsSet"
                                         className="skillSetIcon" 
                                     />
