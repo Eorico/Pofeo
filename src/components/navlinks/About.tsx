@@ -27,6 +27,24 @@ import {
 import lineFollowing from '../../../public/video/lineFollowing.mp4';
 import showDownCar from '../../../public/video/showDownCar.mp4';
 
+import PythonCert1 from '../../../public/assets/PythonCert1.png';
+import PythonCert2 from '../../../public/assets/PythonCert2.png';
+import Js1Cert from '../../../public/assets/Js1Cert.png';
+import Js2Cert from '../../../public/assets/Js2Cert.png';
+import CPlus1 from '../../../public/assets/C++1.png';
+import CS1 from '../../../public/assets/CS1.png';
+
+import pythonJourney from '../../../public/assets/pythonJourney.png';
+import WebDev1 from '../../../public/assets/WebDev1.png';
+import WebDev2 from '../../../public/assets/WebDev2.png';
+import ReactImg from '../../../public/assets/React.png';
+import MobileDev from '../../../public/assets/MobileDev.png';
+import Robotics from '../../../public/assets/Robotics.png';
+
+import EoricoImage from '../../../public/assets/ProfPic.png';
+import tupImage from '../../../public/assets/TUPCAVITE.jpg';
+import brosImage from '../../../public/assets/aboutmycourse.jpg';
+
 const techLogos = [
   { node: <SiReact color="#09e9e5ff"/>, title: "React", href: "https://react.dev" },
   { node: <SiNextdotjs color="#17f117ff"/>, title: "Next.js", href: "https://nextjs.org",  },
@@ -44,43 +62,23 @@ const techLogos = [
   { node: <SiCanva color="#0b94d4ff"/>, title: "Raspberry Pi", href: "https://www.canva.com/", },
 ];
 
- 
-
 const Certifications = [
-    {
-        title: "Python Essential 1",
-        image: "/assets/PythonCert1.png",
-    },
-    {
-        title: "Python Essential 2",
-        image: "/assets/PythonCert2.png"
-    },
-    {
-        title: "JavaScript Essential 1",
-        image: "/assets/Js1Cert.png"
-    },
-    {
-        title: "JavaScript Essential 2",
-        image: "/assets/Js2Cert.png"
-    },
-    {
-        title: "C++ Essential 1",
-        image: "/assets/C++1.png"
-    },
-    {
-        title: "Computer Science 1",
-        image: "/assets/CS1.png"
-    },
+    { title: "Python Essential 1", image: PythonCert1 },
+    { title: "Python Essential 2", image: PythonCert2 },
+    { title: "JavaScript Essential 1", image: Js1Cert },
+    { title: "JavaScript Essential 2", image: Js2Cert },
+    { title: "C++ Essential 1", image: CPlus1 },
+    { title: "Computer Science 1", image: CS1 },
 ];
 
 const timelineFigures = [
-    {figure: '/assets/pythonJourney.png'},
-    {figure: '/assets/WebDev1.png'},
-    {figure: '/assets/WebDev2.png'},
-    {figure: '/assets/React.png'},
-    {figure: '/assets/MobileDev.png'},
-    {figure: '/assets/Robotics.png'},
-]
+    { figure: pythonJourney },
+    { figure: WebDev1 },
+    { figure: WebDev2 },
+    { figure: ReactImg },
+    { figure: MobileDev },
+    { figure: Robotics },
+];
 
 const VISIBLECARDS = 5
 
@@ -195,7 +193,7 @@ const About: React.FC = () => {
                                 </p>
                             </div>
                             <div className="about-Image fade-in-up">
-                                <img src="/assets/ProfPic.png" alt="Me" />
+                                <img src={EoricoImage} alt="Me" />
                             </div>
                         </div>
                     </div>
@@ -228,7 +226,7 @@ const About: React.FC = () => {
                                 <div className="education-school-image">
                                     <a href="https://tup.edu.ph/">
                                         <img 
-                                            src="/assets/TUPCAVITE.jpg" 
+                                            src={tupImage} 
                                             alt="Technological University of the Philippines" 
                                         />
                                     </a>
@@ -290,7 +288,7 @@ const About: React.FC = () => {
 
                                 <div className="education-course-image education-school-image">
                                     <img 
-                                        src="/assets/aboutmycourse.jpg" 
+                                        src={brosImage} 
                                         alt="Technological University of the Philippines" 
                                     />
                                 </div>

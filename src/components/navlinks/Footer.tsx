@@ -2,6 +2,7 @@ import React from 'react';
 import { Github, Facebook, Instagram, Mail, Phone, MapPin} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import '../../styles/Footer.css'; 
+import heartAnimation from '../../../public/animation/heart.gif'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -79,7 +80,7 @@ const Footer: React.FC = () => {
             <p className="footer-copyright">
               © {currentYear} Portfolio. Made with {' '} 
               <img 
-                src="/animation/heart.gif" 
+                src={heartAnimation} 
                 alt="Dancing heart" 
                 className='heart-icon'
                 /> {' '} 

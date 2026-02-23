@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import '../../styles/Home.css';
+import EoImage from '../../../public/assets/EO.png'
 
 const Home: React.FC = () => {
   return (
@@ -41,7 +42,7 @@ const Home: React.FC = () => {
 
             <div className="hero-Image fade-in-up">
               <img 
-                src="/assets/EO.png" 
+                src={EoImage}
                 alt="eorico-gonzales" 
               />
             </div>

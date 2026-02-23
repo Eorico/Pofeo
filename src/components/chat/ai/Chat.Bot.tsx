@@ -2,7 +2,7 @@ import { XCircle } from "lucide-react";
 import { MdSmartToy } from 'react-icons/md';
 import { useEffect, useRef, useState } from "react";
 import { getBotReply } from "../responses/bot";
- 
+import eoLogo from '../../../../public/assets/eoLogo.png';
 
 type ChatBotProps = {
     onClose: () => void;
@@ -77,7 +77,7 @@ const ChatBot = ({onClose}: ChatBotProps) => {
                         >
                             {msg.from === "bot" && (
                             <div className="bot-profile">
-                                <img src="/assets/eoLogo.png" alt="Bot Profile" />
+                                <img src={eoLogo} alt="Bot Profile" />
                             </div>
                             )}
                             <div className={`message ${msg.from === "bot" ? "bot-message" : "user-message"}`}>
