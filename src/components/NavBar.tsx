@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import '../styles/Nav.css';
+import eoLogo from '../../public/assets/eoLogo.png';
 
 const Nav: React.FC = () => {
     const [openMenu, setMenuOpen] = useState(false);
@@ -56,7 +57,7 @@ const Nav: React.FC = () => {
             <div className="navContainer">
                 <Link to="/" className={`navLogo ${scrolled ? 'scrolledLogo' : ''}`} onClick={closeMenu}>
                     <img 
-                        src="/assets/eoLogo.png"
+                        src={eoLogo}
                         alt="Nav logo" 
                     />
                     <span>{'<Ico_Dev/>'}</span>
